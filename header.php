@@ -26,10 +26,10 @@
             <div class="l-header__nav">
                 <ul>
                     <li><a href="<?php echo home_url('/#concept'); ?>">コンセプト</a></li>
-                    <li><a href="<?php echo home_url('/#'); ?>">特徴</a></li>
-                    <li><a href="<?php echo home_url('/#'); ?>">実績</a></li>
+                    <li><a href="<?php echo home_url('/#features'); ?>">特徴</a></li>
+                    <li><a href="<?php echo home_url('/#works'); ?>">実績</a></li>
                     <li><a href="<?php echo home_url('/#plan'); ?>">プラン</a></li>
-                    <li><a href="<?php echo home_url('/#'); ?>">導入の流れ</a></li>
+                    <li><a href="<?php echo home_url('/#flow'); ?>">導入の流れ</a></li>
                     <li><a href="<?php echo home_url('/#faq'); ?>">よくあるご質問</a></li>
                     <li><a href="<?php echo home_url('/#news'); ?>">お知らせ</a></li>
                 </ul>
