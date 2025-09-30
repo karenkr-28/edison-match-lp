@@ -1,0 +1,65 @@
+@use "global" as global;
+
+/**
+ * ダッシュボード画面のカスタマイズ
+ */
+option[value="pending"] {
+  display: none;
+}
+#product_type-adder,
+#product_cat-adder {
+  display: none;
+}
+
+.block-editor-page.post-type-brand {
+  .editor-post-taxonomies__hierarchical-terms-add {
+    display: none;
+  }
+}
+.block-editor-page.post-type-post {
+  .editor-post-taxonomies__hierarchical-terms-add {
+    display: none;
+  }
+}
+
+.inline-edit-status + label {
+  display: none !important;
+}
+
+#aioseo-limit-modified-date {
+  display: none;
+}
+
+.editor-post-panel__row:has(.editor-post-sticky__toggle-control) {
+  display: none !important;
+}
+
+.index-php {
+  #dashboard_right_now,
+  #dashboard_activity,
+  #postbox-container-2,
+  #dashboard_primary {
+    display: none;
+  }
+}
+.quick-action {
+  li {
+    width: 48%;
+  }
+  a {
+    display: block;
+    background: #2271b1;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+  }
+}
+
+/**
+ * ダッシュボード画面 不必要な機能を削除
+ */
+
+// 「ブログのトップに固定」チェックボックス
+.edit-post-post-status .components-panel__row:nth-of-type(4) {
+  display: none !important;
+}

@@ -1,0 +1,11 @@
+@use "../global" as global;
+
+.l-inner {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  // @include global.sp {
+  //   width: 78%;
+  // }
+}

@@ -1,0 +1,20 @@
+@use "../global" as global;
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  background: rgba(255, 255, 255, 0.7); /* 半透明の背景 */
+  backdrop-filter: blur(8px); /* 背景のぼかし */
+  -webkit-backdrop-filter: blur(8px); /* Safari対応 */
+  &__inner {
+    display: flex;
+    padding: 5px 20px;
+  }
+  &__logo {
+    width: 300px;
+  }
+}

@@ -1,0 +1,23 @@
+@use "../global" as global;
+
+.l-blog {
+  & > * {
+    padding: 20px 0;
+    @include global.sp {
+      padding: 12px 0;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  ol {
+    list-style: decimal;
+    padding-left: 20px;
+  }
+}

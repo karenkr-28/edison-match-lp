@@ -1,0 +1,70 @@
+@use "../global" as global;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  font-family: global.$font--primary;
+  font-size: 1.6rem;
+  // font-weight: ;
+  // line-height: ;
+  // letter-spacing: ;
+
+  @include global.sp {
+    font-size: 1.4rem;
+  }
+}
+
+main {
+  position: relative;
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+  cursor: pointer;
+}
+
+// pc.spの表示切り替え
+.pc {
+  display: block !important;
+  @media (max-width: global.$sp) {
+    display: none !important;
+  }
+}
+
+.sp {
+  display: none !important;
+  @media (max-width: global.$sp) {
+    display: block !important;
+  }
+}
+
+/* ページネーション　*/
+// .wp-pagenavi {
+//   display: flex;
+//   gap: 10px;
+//   width: fit-content;
+//   margin: 100px auto 0 auto;
+
+//   .pages {
+//     display: none;
+//   }
+
+//   span,
+//   a {
+//     border: unset !important;
+//   }
+//   .page {
+//     opacity: 0.5;
+//   }
+//   .current {
+//     opacity: 1;
+//   }
+// }

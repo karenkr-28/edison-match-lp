@@ -1,0 +1,16 @@
+@use "../global" as global;
+
+.c-title--icon {
+  display: flex;
+  gap: 10px;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: global.$color--purple;
+  span {
+    display: block;
+    font-size: 0.9rem;
+  }
+  img {
+    width: 20px;
+  }
+}
