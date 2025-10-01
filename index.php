@@ -22,6 +22,19 @@
                     コンセプト
                 </div>
             </h2>
+            <p class="p-front__concept__catchcopy">
+                <span class="p-front__concept__catchcopy-highlight">データを資産として活用</span>することで、<br>
+                <span class="p-front__concept__catchcopy-highlight">収益向上を実現</span>します。
+            </p>
+            <div class="p-front__concept__explanation">
+                <ol class="p-front__concept__explanation-list">
+                    <li>顧客データの<span>収集</span></li>
+                    <li>収集データの<span>分析</span></li>
+                    <li>分析に基づいた<br><span>最適なアプローチを決定</span></li>
+                </ol>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/concept_img.svg">
+            </div>
+
         </div>
     </section>
     <section class="p-front__about">

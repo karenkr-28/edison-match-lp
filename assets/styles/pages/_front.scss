@@ -53,7 +53,51 @@
     padding: 100px 0;
     background-color: #fff;
     z-index: 2;
+    &__catchcopy {
+      margin-bottom: 120px;
+      font-size: 2.2rem;
+      font-weight: 500;
+      &-highlight {
+        position: relative;
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      &-highlight::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background-color: rgba(global.$color--green, 0.5);
+        z-index: -1;
+      }
+    }
+    &__explanation {
+      display: flex;
+      justify-content: space-between;
+      img {
+        max-width: 600px;
+      }
+      &-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 2.6rem;
+        list-style: decimal;
+        font-size: 2rem;
+        font-weight: 600;
+        li::marker {
+          font-size: 2.6rem;
+        }
+        span {
+          font-weight: bold;
+          color: global.$color--green;
+        }
+      }
+    }
   }
+
   // エジソンマッチとは
   &__about {
     padding: 100px 0;
