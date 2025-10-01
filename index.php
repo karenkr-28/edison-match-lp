@@ -34,9 +34,9 @@
                 </ol>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/concept_img.svg">
             </div>
-
         </div>
     </section>
+    
     <section class="p-front__about">
         <div class="l-inner">
             <h2 class="c-title--icon">
