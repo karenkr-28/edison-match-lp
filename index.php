@@ -82,8 +82,32 @@
                     </p>
                 </div>
             </div>
+        </div>
+    </section>
 
-
+    <section class="p-front__features">
+        <div class="l-inner">
+            <h2 class="c-title--icon">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
+                <div class="p-front__about__catchcopy">
+                    特徴
+                </div>
+            </h2>
+        </div>
+        <div class="p-front__features__item-list">
+            <div class="p-front__features__item">
+                <div class="p-front__features__item-inner">
+                    <div class="p-front__features__item--point">POINT 01</div>
+                    <div class="p-front__features__item--title">
+                        <span>「人材マッチング」テンプレート</span>を標準搭載
+                    </div>
+                    <div class="p-front__features__item--text">
+                        人材業界での活用に最適化された候補者×求人のマッチングセットを標準装備。<br>
+                        マッチング対象のオブジェクトや検索項目も初期構築済みのため、導入初日から即利用が可能です。貴社の業務フローや商習慣に応じたカスタマイズにも柔軟に対応します。
+                    </div>
+                </div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/feature_point_01.png">
+            </div>
         </div>
     </section>
 

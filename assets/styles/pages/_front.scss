@@ -154,9 +154,14 @@
         }
       }
       > img {
+        position: relative;
         max-width: 200px;
         padding-bottom: 20px;
       }
     }
+  }
+  // 特徴
+  &__features {
+    background-color: #fff;
   }
 }
