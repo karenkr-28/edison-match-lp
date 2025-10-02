@@ -113,7 +113,7 @@
                     <div class="p-front__features__item__content">
                         <div class="p-front__features__item__tag">POINT 02</div>
                         <div class="p-front__features__item__title">
-                            <span>柔軟なマッチングロジック</span>の設定が可能
+                            <span>柔軟なマッチングロジック</span>の<br class="sp">設定が可能
                         </div>
                         <p class="p-front__features__item__text">
                             Salesforce上の任意の2オブジェクト間でマッチングが可能。<br>
@@ -141,7 +141,7 @@
                     <div class="p-front__features__item__content">
                         <div class="p-front__features__item__tag">POINT 04</div>
                         <div class="p-front__features__item__title">
-                            地理情報を活用した<span>ローカルマッチング</span>にも対応
+                            地理情報を活用した<br class="sp"><span>ローカルマッチング</span>にも対応
                         </div>
                         <p class="p-front__features__item__text">
                             地図連携機能により、位置情報をベースにした検索やマッチングが可能。<br>
@@ -156,7 +156,7 @@
                     <div class="p-front__features__item__content">
                         <div class="p-front__features__item__tag">POINT 05</div>
                         <div class="p-front__features__item__title">
-                            Salesforce Flowとの連携で<span>業務処理の自動化</span>
+                            Salesforce Flowとの連携で<br class="sp"><span>業務処理の自動化</span>
                         </div>
                         <p class="p-front__features__item__text">
                             検索・マッチング結果に応じてSalesforce Flowを自動実行。
