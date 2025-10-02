@@ -245,4 +245,95 @@
     }
   }
   // プラン
+  &__plan {
+    padding-top: 30px;
+    padding-bottom: 150px;
+    .c-title--icon {
+      color: global.$color--green;
+    }
+    &__content {
+      display: flex;
+      justify-content: space-around;
+      @include global.sp {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+      }
+      &--check {
+        li {
+          position: relative;
+          margin-left: 40px;
+          padding-left: 20px;
+          padding-bottom: 7px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    &__card {
+      position: relative;
+      width: 350px;
+      padding-bottom: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 14px rgba(#000, 0.1);
+
+      &--green {
+        border-top: 15px solid global.$color--green;
+        .p-front__plan__card__plan {
+          color: global.$color--green;
+        }
+        .p-front__plan__content--check li::before {
+          content: "";
+          position: absolute;
+          top: 3px;
+          left: 0;
+          width: 13px;
+          height: 10px;
+          background: url("../images/icons/check_green.svg") no-repeat
+            center/contain;
+        }
+      }
+      &--blue {
+        border-top: 15px solid global.$color--blue;
+        .p-front__plan__card__plan {
+          color: global.$color--blue;
+        }
+        .p-front__plan__content--check li::before {
+          content: "";
+          position: absolute;
+          top: 3px;
+          left: 0;
+          width: 13px;
+          height: 10px;
+          background: url("../images/icons/check_blue.svg") no-repeat
+            center/contain;
+        }
+      }
+
+      &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__title {
+        margin-top: 30px;
+        margin-bottom: 25px;
+        font-size: 2.1rem;
+      }
+      &__plan {
+        font-size: 2.3rem;
+        font-weight: bold;
+      }
+      &__user {
+        margin-bottom: 45px;
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: normal;
+        span {
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
 }
