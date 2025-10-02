@@ -53,10 +53,287 @@
     padding: 100px 0;
     background-color: #fff;
     z-index: 2;
+    .c-catchcopy {
+      margin-bottom: 120px;
+    }
+    &__explanation {
+      display: flex;
+      justify-content: space-between;
+      @include global.sp {
+        flex-direction: column;
+      }
+      img {
+        width: 57%;
+        max-width: 600px;
+        @include global.sp {
+          margin: 50px auto 0;
+          width: 80%;
+        }
+      }
+      &-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 2.6rem;
+        list-style: decimal;
+        font-size: 2rem;
+        font-weight: 600;
+        li::marker {
+          font-size: 2.6rem;
+        }
+        span {
+          font-weight: bold;
+          color: global.$color--green;
+        }
+      }
+    }
   }
+
   // エジソンマッチとは
   &__about {
     padding: 100px 0;
     background-color: global.$color--gray;
+    &__item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      &-list {
+        display: flex;
+        @include global.sp {
+          flex-direction: column;
+          gap: 50px;
+        }
+      }
+      &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__index {
+        font-size: 4.6rem;
+        font-weight: 500;
+      }
+      &__title {
+        margin-top: -20px;
+        font-weight: 600;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 280px;
+        height: 280px;
+        border: #7070700f 1px solid;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+      }
+      &__text {
+        max-width: 210px;
+        line-height: normal;
+        color: #171717;
+        font-weight: 500;
+      }
+      &--one {
+        color: global.$color--purple;
+        &::before {
+          background-color: rgba(global.$color--purple, 0.06);
+        }
+      }
+      &--two {
+        color: global.$color--blue;
+        &::before {
+          background-color: rgba(#5470bd, 0.06);
+        }
+      }
+      &--three {
+        color: global.$color--green;
+        &::before {
+          background-color: rgba(global.$color--green, 0.06);
+        }
+      }
+      > img {
+        position: relative;
+        max-width: 200px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  // 特徴
+  &__features {
+    position: relative;
+    background: #fff;
+    &__backimg-left,
+    &__backimg-right {
+      position: absolute;
+      width: 55%;
+      max-width: 500px;
+    }
+    &__backimg-left {
+      position: absolute;
+      top: 200px;
+      left: 0;
+      @include global.sp {
+        top: 250px;
+      }
+    }
+    &__backimg-right {
+      right: 0;
+      bottom: 430px;
+      @include global.sp {
+        bottom: 500px;
+      }
+    }
+    .l-inner {
+      padding-top: 150px;
+      padding-bottom: 110px;
+    }
+    .c-title--icon {
+      margin-bottom: 65px;
+    }
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 90px;
+      @include global.sp {
+        flex-direction: column;
+      }
+      img {
+        width: 45%;
+        max-width: 350px;
+        z-index: 1;
+      }
+      &__content {
+        width: 50%;
+      }
+      &__tag {
+        width: fit-content;
+        padding: 5px 22px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #fff;
+        background-color: global.$color--purple;
+        border-radius: 20px;
+      }
+      &__title {
+        margin-bottom: 20px;
+        font-size: 2.2rem;
+        font-weight: 500;
+        span {
+          font-weight: 800;
+          color: global.$color--purple;
+        }
+      }
+      &__text {
+        font-weight: 500;
+      }
+    }
+  }
+  // カスタムオブジェクト
+  &__custom-object {
+    padding-top: 90px;
+    padding-bottom: 80px;
+    background-color: global.$color--gray;
+    p {
+      font-weight: 500;
+      margin-bottom: 50px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  // プラン
+  &__plan {
+    padding-top: 30px;
+    padding-bottom: 150px;
+    .c-title--icon {
+      color: global.$color--green;
+    }
+    &__content {
+      display: flex;
+      justify-content: space-around;
+      @include global.sp {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+      }
+      &--check {
+        li {
+          position: relative;
+          margin-left: 40px;
+          padding-left: 20px;
+          padding-bottom: 7px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    &__card {
+      position: relative;
+      width: 350px;
+      padding-bottom: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 14px rgba(#000, 0.1);
+
+      &--green {
+        border-top: 15px solid global.$color--green;
+        .p-front__plan__card__plan {
+          color: global.$color--green;
+        }
+        .p-front__plan__content--check li::before {
+          content: "";
+          position: absolute;
+          top: 3px;
+          left: 0;
+          width: 13px;
+          height: 10px;
+          background: url("../images/icons/check_green.svg") no-repeat
+            center/contain;
+        }
+      }
+      &--blue {
+        border-top: 15px solid global.$color--blue;
+        .p-front__plan__card__plan {
+          color: global.$color--blue;
+        }
+        .p-front__plan__content--check li::before {
+          content: "";
+          position: absolute;
+          top: 3px;
+          left: 0;
+          width: 13px;
+          height: 10px;
+          background: url("../images/icons/check_blue.svg") no-repeat
+            center/contain;
+        }
+      }
+
+      &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__title {
+        margin-top: 30px;
+        margin-bottom: 25px;
+        font-size: 2.1rem;
+      }
+      &__plan {
+        font-size: 2.3rem;
+        font-weight: bold;
+      }
+      &__user {
+        margin-bottom: 45px;
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: normal;
+        span {
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+    }
   }
 }
