@@ -208,4 +208,17 @@
       }
     }
   }
+  // カスタムオブジェクト
+  &__custom-object {
+    padding-top: 90px;
+    padding-bottom: 80px;
+    background-color: global.$color--gray;
+    p {
+      font-weight: 500;
+      margin-bottom: 50px;
+    }
+    img {
+      width: 100%;
+    }
+  }
 }

@@ -174,13 +174,12 @@
             <h2 class="c-title--icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
                 <div>
-                    特徴
+                    カスタムオブジェクト
                 </div>
             </h2>
+            <p>御社でお持ちのあらゆるビッグデータが、様々な機能と組み合わさり、新たなソリューションとして生まれ変わります。</p>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/custom-object_img.svg">
         </div>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/custom-object_img.svg">
-
-
     </section>
 
 </main>
