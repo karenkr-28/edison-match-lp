@@ -86,6 +86,7 @@
     </section>
 
     <section class="p-front__features">
+        <img class="p-front__features__backimg-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/front/feature_img_left.png">
         <div class="l-inner">
             <h2 class="c-title--icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
@@ -167,6 +168,7 @@
                 </div>
             </div>
         </div>
+        <img class="p-front__features__backimg-right" src="<?php echo get_template_directory_uri(); ?>/assets/images/front/feature_img_right.png">
     </section>
 
     <section class="p-front__custom-object">
@@ -182,6 +184,18 @@
         </div>
     </section>
 
+    <!-- 実績 -->
+
+    <section class="p-front__plan">
+        <div class="l-inner">
+            <h2 class="c-title--icon">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
+                <div>
+                    プラン
+                </div>
+            </h2>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

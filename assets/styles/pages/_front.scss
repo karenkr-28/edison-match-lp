@@ -162,10 +162,22 @@
   }
   // 特徴
   &__features {
-    background: url("../images/front/feature_img_left.png") no-repeat,
-      url("../images/front/feature_img_right.png") no-repeat, #fff;
-    background-position: left -160px top 305px, right -130px bottom 430px;
-    background-size: 40% auto, 45% auto;
+    background: #fff;
+    &__backimg-left,
+    &__backimg-right {
+      position: absolute;
+      width: 50%;
+      max-width: 500px;
+    }
+    &__backimg-left {
+      top: 52%;
+      left: 0;
+    }
+    &__backimg-right {
+      right: 0;
+      bottom: 25%;
+    }
+
     .l-inner {
       padding-top: 150px;
       padding-bottom: 110px;
@@ -181,6 +193,7 @@
       img {
         width: 45%;
         max-width: 350px;
+        z-index: 1;
       }
       &__content {
         width: 50%;
@@ -221,4 +234,5 @@
       width: 100%;
     }
   }
+  // プラン
 }
