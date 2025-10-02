@@ -162,24 +162,27 @@
   }
   // 特徴
   &__features {
+    background: url("../images/front/feature_img_left.png") no-repeat,
+      url("../images/front/feature_img_right.png") no-repeat, #fff;
+    background-position: left -160px top 305px, right -130px bottom 430px;
+    background-size: 40% auto, 45% auto;
     .l-inner {
       padding-top: 150px;
       padding-bottom: 110px;
     }
-    .c-title--icon{
-    margin-bottom: 65px;}
-    background-color: #fff;
+    .c-title--icon {
+      margin-bottom: 65px;
+    }
     &__item {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       margin-bottom: 90px;
       img {
         width: 45%;
         max-width: 350px;
-        height: auto;
-        object-fit: contain;
       }
-      &-content{
+      &__content {
         width: 50%;
       }
       &__tag {

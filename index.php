@@ -41,7 +41,7 @@
         <div class="l-inner">
             <h2 class="c-title--icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
-                <div class="p-front__about__catchcopy">
+                <div>
                     <span>エジソンマッチ</span>
                     EDISON MATCH とは
                 </div>
@@ -89,13 +89,13 @@
         <div class="l-inner">
             <h2 class="c-title--icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
-                <div class="p-front__about__catchcopy">
+                <div>
                     特徴
                 </div>
             </h2>
             <div class="p-front__features__item-list">
                 <div class="p-front__features__item">
-                    <div class="p-front__features__item-content">
+                    <div class="p-front__features__item__content">
                         <div class="p-front__features__item__tag">POINT 01</div>
                         <div class="p-front__features__item__title">
                             <span>「人材マッチング」テンプレート</span>を標準搭載
@@ -109,7 +109,7 @@
                 </div>
 
                 <div class="p-front__features__item">
-                    <div class="p-front__features__item-content">
+                    <div class="p-front__features__item__content">
                         <div class="p-front__features__item__tag">POINT 02</div>
                         <div class="p-front__features__item__title">
                             <span>柔軟なマッチングロジック</span>の設定が可能
@@ -124,7 +124,7 @@
                 </div>
 
                 <div class="p-front__features__item">
-                    <div class="p-front__features__item-content">
+                    <div class="p-front__features__item__content">
                         <div class="p-front__features__item__tag">POINT 03</div>
                         <div class="p-front__features__item__title">
                             条件・項目を<span>自由にカスタマイズ</span>
@@ -137,7 +137,7 @@
                 </div>
 
                 <div class="p-front__features__item">
-                    <div class="p-front__features__item-content">
+                    <div class="p-front__features__item__content">
                         <div class="p-front__features__item__tag">POINT 04</div>
                         <div class="p-front__features__item__title">
                             地理情報を活用した<span>ローカルマッチング</span>にも対応
@@ -152,7 +152,7 @@
                 </div>
 
                 <div class="p-front__features__item">
-                    <div class="p-front__features__item-content">
+                    <div class="p-front__features__item__content">
                         <div class="p-front__features__item__tag">POINT 05</div>
                         <div class="p-front__features__item__title">
                             Salesforce Flowとの連携で<span>業務処理の自動化</span>
@@ -167,6 +167,20 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="p-front__custom-object">
+        <div class="l-inner">
+            <h2 class="c-title--icon">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
+                <div>
+                    特徴
+                </div>
+            </h2>
+        </div>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/custom-object_img.svg">
+
+
     </section>
 
 </main>
