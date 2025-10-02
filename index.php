@@ -194,6 +194,22 @@
                     プラン
                 </div>
             </h2>
+            <div class="p-front__plan__content">
+                <div class="p-front__plan__content--title">
+                    <p class="p-front__plan__content--title-target">CRM未導入のお客様</p>
+                    <p class="p-front__plan__content--title-plan">Default Plan</p>
+                    <p class="p-front__plan__content--title-user">１ユーザー</p>
+                    <p class="p-front__plan__content--title-price">¥2,000 JPY / 月</p>
+                </div>
+                <div class="p-front__plan__content--check">
+                    <p>14日間の無料トライアル</p>
+                    <p>最低契約期間：１年間</p>
+                    <p>最低契約数：５ユーザー</p>
+                    <p>ユーザー追加単価：１ユーザー</p>
+                    <p>ご契約の更新：１年間ごとに自動更新</p>
+                    <p>サポートサービス：メールによるテクニカルサポート</p>
+                </div>
+            </div>
         </div>
     </section>
 </main>
