@@ -394,3 +394,23 @@ function display_thumbnail_column($column, $post_id)
 }
 add_action('manage_posts_custom_column', 'display_thumbnail_column', 10, 2);
 add_action('manage_attorneys_posts_custom_column', 'display_thumbnail_column', 10, 2);
+
+// Contact Form 7で自動挿入されるPタグ、brタグを削除
+add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
+function wpcf7_autop_return_false()
+{
+	return false;
+}
+// カタカナのみを許可するバリデーション
+add_filter('wpcf7_validate_text*', 'custom_katakana_validation', 20, 2);
+function custom_katakana_validation($result, $tag)
+{
+	$name = $tag['name'];
+	if ($name == 'user-name-kana') {
+		$value = isset($_POST[$name]) ? trim($_POST[$name]) : '';
+		if (!preg_match('/^[ァ-ヶー]+$/u', $value)) {
+			$result->invalidate($tag, 'ふりがなはカタカナで入力してください。');
+		}
+	}
+	return $result;
+}
