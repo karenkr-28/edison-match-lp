@@ -26,24 +26,26 @@
       height: 20px;
       margin-right: 5px;
     }
+    .wpcf7-radio {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      gap: 50px;
+    }
   }
   &__form {
     &__row {
       display: flex;
       justify-content: space-between;
-    }
-    &__submit-btn {
-      display: block;
-      padding: 10px 60px;
-      margin: 150px auto 200px;
-      font-size: 1.6rem;
-      font-weight: 600;
-      background-color: global.$color--blue;
-      color: #fff;
-      border-radius: 3px;
-      transition: 0.3s;
-      &:hover {
-        background-color: global.$color--green;
+      margin-bottom: 25px;
+      &--confirm {
+        &:nth-of-type(1) {
+          margin-top: 170px;
+        }
+        p {
+          width: 65%;
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -57,9 +59,8 @@
     input[type="text"],
     input[type="email"],
     input[type="tel"],
-    input[type="textarea"] {
-      width: 60%;
-      margin-bottom: 25px;
+    textarea {
+      width: 100%;
       padding: 10px;
       border-radius: 3px;
       background-color: rgba(global.$color--blue, 0.1);
@@ -81,9 +82,73 @@
       margin-left: 10px;
       font-size: 1.6rem;
     }
+    input[type="submit"],
+    input[type="button"] {
+      display: block;
+      padding: 10px 60px;
+      margin: 0 auto;
+      width: 200px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      background-color: global.$color--blue;
+      color: #fff;
+      border-radius: 3px;
+      transition: 0.3s;
+      cursor: pointer;
+      &:nth-of-type(1) {
+        margin-top: 150px;
+        margin-bottom: 25px;
+        &:hover {
+          background-color: global.$color--green;
+        }
+      }
+      &:nth-of-type(2) {
+        width: 200px;
+        margin-bottom: 200px;
+        background-color: global.$color--green;
+        &:hover {
+          background-color: global.$color--blue;
+        }
+      }
+    }
+    .wpcf7-response-output {
+      margin-top: 0;
+      border: none;
+      color: red;
+      text-align: center;
+    }
+    a {
+      color: global.$color--blue;
+      border-bottom: global.$color--blue 1px solid;
+    }
+    .wpcf7-form-control-wrap {
+      width: 60%;
+    }
   }
-  a {
-    color: global.$color--blue;
-    border-bottom: global.$color--blue 1px solid;
+
+  &__thanks {
+    h1 {
+      margin-bottom: 110px;
+    }
+    p {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+    }
+    &__index-btn {
+      display: block;
+      padding: 10px 60px;
+      margin: 0 auto;
+      width: 200px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      background-color: global.$color--blue;
+      color: #fff;
+      border-radius: 3px;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        background-color: global.$color--green;
+      }
+    }
   }
 }

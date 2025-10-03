@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Contact
+Template Name: お問い合わせ確認画面
 */
 get_header(); ?>
 
@@ -8,7 +8,7 @@ get_header(); ?>
     <div class="l-inner">
 
         <h1>お問い合わせ</h1>
-        <?php echo do_shortcode('[contact-form-7 id="bf2075b" title="お問い合わせフォーム"]') ?>
+        <?php echo do_shortcode('[contact-form-7 id="65868eb" title="お問い合わせフォーム_確認"]') ?>
     </div>
 </main>
 
