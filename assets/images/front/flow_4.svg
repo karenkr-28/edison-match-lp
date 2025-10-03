@@ -1,0 +1,16 @@
+<svg id="グループ_1009" data-name="グループ 1009" xmlns="http://www.w3.org/2000/svg" width="79.689" height="79.688" viewBox="0 0 79.689 79.688">
+  <circle id="楕円形_5" data-name="楕円形 5" cx="39.844" cy="39.844" r="39.844" transform="translate(0 0)" fill="#fff"/>
+  <g id="グループ_1015" data-name="グループ 1015" transform="translate(25.478 23.481)">
+    <path id="Icon_fa-solid-lightbulb" data-name="Icon fa-solid-lightbulb" d="M22.022,31.345a24.207,24.207,0,0,1,4.016-7.036c.424-.58.849-1.159,1.257-1.747a14.368,14.368,0,1,0-26.17-8.2,14.269,14.269,0,0,0,2.563,8.187c.408.588.833,1.167,1.257,1.747a23.944,23.944,0,0,1,4.016,7.036h13.06Zm-6.53,11.871a6.528,6.528,0,0,0,6.53-6.53V35.38H8.961v1.306A6.528,6.528,0,0,0,15.491,43.216Z" transform="translate(-1.125)" fill="#e3dafc" stroke="#000" stroke-width="2"/>
+    <path id="パス_2028" data-name="パス 2028" d="M2579.147,11003.482s1.813-5.068,5.723-5.722" transform="translate(-2574.062 -10992.067)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4"/>
+    <path id="パス_2029" data-name="パス 2029" d="M18,0" transform="translate(2.551 36.462)" fill="none" stroke="#171717" stroke-width="2"/>
+    <line id="線_7" data-name="線 7" x2="11.343" transform="translate(8.695 39.308)" fill="none" stroke="#171717" stroke-width="2"/>
+  </g>
+  <g id="グループ_1016" data-name="グループ 1016" transform="translate(24.73 12.991)">
+    <line id="線_11" data-name="線 11" x1="1.683" y2="4.489" transform="translate(21.239 1.122)" fill="none" stroke="#171717" stroke-linecap="round" stroke-width="2"/>
+    <line id="線_13" data-name="線 13" x2="1.683" y2="4.489" transform="translate(7.595 1.122)" fill="none" stroke="#171717" stroke-linecap="round" stroke-width="2"/>
+    <line id="線_9" data-name="線 9" x1="3.927" y2="3.503" transform="translate(26.301 4.489)" fill="none" stroke="#171717" stroke-linecap="round" stroke-width="2"/>
+    <line id="線_14" data-name="線 14" x2="3.927" y2="3.503" transform="translate(0 4.489)" fill="none" stroke="#171717" stroke-linecap="round" stroke-width="2"/>
+    <line id="線_12" data-name="線 12" y2="5.05" transform="translate(15.259)" fill="none" stroke="#171717" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>
