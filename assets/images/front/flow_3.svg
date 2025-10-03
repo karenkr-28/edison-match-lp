@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="79.689" height="130.924" viewBox="0 0 79.689 130.924">
+  <g id="グループ_1613" data-name="グループ 1613" transform="translate(-261 -10675.576)">
+    <line id="線_5" data-name="線 5" y2="33" transform="translate(301.185 10771)" fill="none" stroke="#4e3a88" stroke-linecap="round" stroke-width="5" stroke-dasharray="0 15"/>
+    <g id="グループ_1002" data-name="グループ 1002" transform="translate(261 10675.576)">
+      <circle id="楕円形_5" data-name="楕円形 5" cx="39.844" cy="39.844" r="39.844" transform="translate(0 0)" fill="#fff"/>
+      <g id="グループ_1013" data-name="グループ 1013" transform="translate(14.927 22.195)">
+        <rect id="長方形_809" data-name="長方形 809" width="39.186" height="24.998" transform="translate(5.675 2.113)" fill="#e3dafc"/>
+        <path id="Icon_material-laptop-chromebook" data-name="Icon material-laptop-chromebook" d="M45.681,35.646V4.5H4.153V35.646H0V39.8H49.834V35.646Zm-16.611,0H20.764V33.57H29.07Zm12.459-6.229H8.306V8.653H41.528Z" transform="translate(0 -4.5)"/>
+      </g>
+    </g>
+  </g>
+</svg>

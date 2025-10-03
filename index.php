@@ -236,6 +236,39 @@
             </div>
         </div>
     </section>
+
+    <section class="p-front__flow">
+        <img class="p-front__features__backimg-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/front/feature_img_left.png">
+        <div class="l-inner">
+            <h2 class="c-title--icon">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
+                <div>
+                    導入の流れ
+                </div>
+            </h2>
+            <p>
+                お客様の導入・運用・定着化のため、カスタマーサクセスチームが以下の支援を行います。
+            </p>
+            <div class="p-front__flow__head">
+                <h3>運用開始までのフロー</h3>
+                <p>ご検討・お見積もりの段階から、専門のスタッフが丁寧にサポートいたします。</p>
+            </div>
+            <div class="p-front__flow__step">
+                <div class="p-front__flow__step__contents">
+                    <div class="p-front__flow__step__contents__left">
+                        <p>STEP 01</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_1.svg">
+                    </div>
+                    <div class="p-front__flow__step__contents__right">
+                        <h4>お問い合わせ</h4>
+                        <p>Edison Matchの導入をご検討されている方は、まずはこちらからお問い合わせ。</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
 </main>
 
 <?php get_footer(); ?>
