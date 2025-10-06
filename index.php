@@ -249,7 +249,7 @@
             <p>
                 お客様の導入・運用・定着化のため、カスタマーサクセスチームが以下の支援を行います。
             </p>
-            <div class="p-front__flow__head">
+            <div class="p-front__flow__head p-front__flow__head--purple">
                 <h3>運用開始までのフロー</h3>
                 <p>ご検討・お見積もりの段階から、専門のスタッフが丁寧にサポートいたします。</p>
             </div>
@@ -264,11 +264,84 @@
                         <p>Edison Matchの導入をご検討されている方は、まずはこちらからお問い合わせ。</p>
                     </div>
                 </div>
-
+                <div class="p-front__flow__step__contents">
+                    <div class="p-front__flow__step__contents__left">
+                        <p>STEP 02</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_2.svg">
+                    </div>
+                    <div class="p-front__flow__step__contents__right">
+                        <h4>初回キックオフ</h4>
+                        <p>ご契約後、キックオフミーティングで、詳細な要件定義や運用のステップを検討。</p>
+                    </div>
+                </div>
+                <div class="p-front__flow__step__contents">
+                    <div class="p-front__flow__step__contents__left">
+                        <p>STEP 03</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_3.svg">
+                    </div>
+                    <div class="p-front__flow__step__contents__right">
+                        <h4>お問い合わせ</h4>
+                        <p>担当者が伴走し、インストールやマニュアル作成、説明会を実施。</p>
+                    </div>
+                </div>
+                <div class="p-front__flow__step__contents">
+                    <div class="p-front__flow__step__contents__left">
+                        <p>STEP 04</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_4.svg">
+                    </div>
+                    <div class="p-front__flow__step__contents__right">
+                        <h4>運営開始</h4>
+                        <p>サービスの利用開始と同時に、現場への定着化に向けた支援もスタート。</p>
+                    </div>
+                </div>
             </div>
 
-
+            <div class="p-front__flow__head p-front__flow__head--green">
+                <h3>運用開始後のサポート</h3>
+                <p>定着化における組織の課題を熟知したカスタマーサクセスが引き続きご支援します。</p>
+            </div>
+            <div class="p-front__flow__step">
+                <div class="p-front__flow__step__contents">
+                    <div class="p-front__flow__step__contents__left">
+                        <p>STEP 05</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_5.svg">
+                    </div>
+                    <div class="p-front__flow__step__contents__right">
+                        <h4>定期的なフォローアップ</h4>
+                        <ul>
+                            <li>利用状況の定期フィードバック</li>
+                            <li>運用に関する各種ご相談</li>
+                            <li>効果測定指標の設定支援</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-front__flow__step__contents">
+                    <div class="p-front__flow__step__contents__left">
+                        <p>STEP 06</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_6.svg">
+                    </div>
+                    <div class="p-front__flow__step__contents__right">
+                        <h4>サポートコンテンツのご提供</h4>
+                        <ul>
+                            <li>活用ガイドのご案内</li>
+                            <li>活用Tipsの配信</li>
+                            <li>テクニアカルサポート窓口</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-front__flow__step__contents">
+                    <div class="p-front__flow__step__contents__left">
+                        <p>STEP 07</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_7.svg">
+                    </div>
+                    <div class="p-front__flow__step__contents__right">
+                        <h4>定着化</h4>
+                        <p>さらなる成果アップに向けた継続的な支援。</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
 </main>
 
 <?php get_footer(); ?>

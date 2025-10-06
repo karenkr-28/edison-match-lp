@@ -336,7 +336,87 @@
       }
     }
   }
+
+  // 導入開始後の流れ
   &__flow {
+    padding-top: 125px;
+    padding-bottom: 185px;
     background-color: global.$color--gray;
+
+    &__head {
+      margin-top: 70px;
+      margin-bottom: 70px;
+      h3 {
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 1.9rem;
+        border-bottom: 4px solid;
+      }
+      &--purple h3 {
+        color: global.$color--purple;
+        border-color: global.$color--purple;
+      }
+      &--green h3 {
+        margin-top: 100px;
+        color: global.$color--blue;
+        border-color: global.$color--blue;
+      }
+    }
+    &__step {
+      &__contents {
+        display: flex;
+        gap: 50px;
+        @include global.sp {
+          gap: 20px;
+        }
+        &:nth-of-type(4) {
+          position: relative;
+          margin-bottom: 150px;
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            bottom: -90px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 25px solid global.$color--purple;
+          }
+        }
+        &__left {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          @include global.sp {
+            flex: 0 0 60px;
+          }
+          p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            @include global.sp {
+              font-size: 1.3rem;
+            }
+          }
+        }
+        &__right {
+          h4 {
+            margin-bottom: 16px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            @include global.sp {
+              margin-bottom: 5px;
+              font-size: 1.6rem;
+            }
+          }
+          ul {
+            margin-left: 30px;
+            list-style: disc;
+          }
+        }
+      }
+    }
   }
 }
