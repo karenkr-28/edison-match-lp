@@ -429,15 +429,22 @@
     &__faq {
       margin-bottom: 15px;
       &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-left: 10px;
         width: 40px;
         height: 40px;
-        text-align: center;
         font-size: 2rem;
         font-weight: bold;
         color: #fff;
         border-radius: 50%;
         aspect-ratio: 1/1;
+        @include global.sp {
+          width: 30px;
+          height: 30px;
+          font-size: 1.8rem;
+        }
       }
       &__text {
         font-weight: 600;
@@ -447,6 +454,9 @@
         display: flex;
         gap: 20px;
         border-radius: 3px;
+        @include global.sp {
+          gap: 10px;
+        }
       }
       &__question {
         align-items: center;
@@ -454,11 +464,18 @@
         height: 60px;
         background-color: #fff;
         box-shadow: #00000029 0 0 9px;
+        @include global.sp {
+          height: fit-content;
+        }
         &__title {
           background-color: global.$color--blue;
         }
         &__text {
           flex: 1;
+          @include global.sp {
+            padding: 10px;
+            line-height: 1.9rem;
+          }
         }
         &__btn {
           display: inline-block;
@@ -504,6 +521,9 @@
     .p-front__faq__faq.is-open .p-front__faq__faq__answer {
       max-height: 300px;
       overflow: visible;
+      @include global.sp {
+        max-height: 400px;
+      }
     }
   }
 }
