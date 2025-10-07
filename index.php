@@ -341,6 +341,63 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="p-front__faq">
+        <div class="l-inner">
+            <h2 class="c-title--icon">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip_blue.svg">
+                <div>
+                    よくあるご質問
+                </div>
+            </h2>
+            <div class="p-front__faq__faq">
+                <div class="p-front__faq__faq__question">
+                    <p class="p-front__faq__faq__title p-front__faq__faq__question__title">Q</p>
+                    <p class="p-front__faq__faq__text p-front__faq__faq__question__text">1ここには質問が入ります。ここには質問が入ります。</p>
+                    <span class="p-front__faq__faq__question__btn"></span>
+                </div>
+                <div class="p-front__faq__faq__answer">
+                    <p class="p-front__faq__faq__title p-front__faq__faq__answer__title">A</p>
+                    <p class="p-front__faq__faq__text p-front__faq__faq__answer__text">1ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには質問が入ります。ここには質問が入ります。</p>
+                </div>
+            </div>
+            <div class="p-front__faq__faq">
+                <div class="p-front__faq__faq__question">
+                    <p class="p-front__faq__faq__title p-front__faq__faq__question__title">Q</p>
+                    <p class="p-front__faq__faq__text p-front__faq__faq__question__text">2ここには質問が入ります。ここには質問が入ります。</p>
+                    <span class="p-front__faq__faq__question__btn"></span>
+                </div>
+                <div class="p-front__faq__faq__answer">
+                    <p class="p-front__faq__faq__title p-front__faq__faq__answer__title">A</p>
+                    <p class="p-front__faq__faq__text p-front__faq__faq__answer__text">2ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには質問が入ります。ここには質問が入ります。</p>
+                </div>
+            </div>
+            <div class="p-front__faq__faq">
+                <div class="p-front__faq__faq__question">
+                    <p class="p-front__faq__faq__title p-front__faq__faq__question__title">Q</p>
+                    <p class="p-front__faq__faq__text p-front__faq__faq__question__text">3ここには質問が入ります。ここには質問が入ります。</p>
+                    <span class="p-front__faq__faq__question__btn"></span>
+                </div>
+                <div class="p-front__faq__faq__answer">
+                    <p class="p-front__faq__faq__title p-front__faq__faq__answer__title">A</p>
+                    <p class="p-front__faq__faq__text p-front__faq__faq__answer__text">3ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには質問が入ります。ここには質問が入ります。</p>
+                </div>
+            </div>
+            <div class="p-front__faq__faq">
+                <div class="p-front__faq__faq__question">
+                    <p class="p-front__faq__faq__title p-front__faq__faq__question__title">Q</p>
+                    <p class="p-front__faq__faq__text p-front__faq__faq__question__text">4ここには質問が入ります。ここには質問が入ります。</p>
+                    <span class="p-front__faq__faq__question__btn"></span>
+                </div>
+                <div class="p-front__faq__faq__answer">
+                    <p class="p-front__faq__faq__title p-front__faq__faq__answer__title">A</p>
+                    <p class="p-front__faq__faq__text p-front__faq__faq__answer__text">4ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには質問が入ります。ここには質問が入ります。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 </main>
 

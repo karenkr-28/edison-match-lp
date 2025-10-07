@@ -419,4 +419,91 @@
       }
     }
   }
+  // よくあるご質問
+  &__faq {
+    padding-top: 90px;
+    padding-bottom: 150px;
+    .c-title--icon {
+      color: global.$color--blue;
+    }
+    &__faq {
+      margin-bottom: 15px;
+      &__title {
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+      }
+      &__text {
+        font-weight: 600;
+      }
+      &__question,
+      &__answer {
+        display: flex;
+        gap: 20px;
+        border-radius: 3px;
+      }
+      &__question {
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        background-color: #fff;
+        box-shadow: #00000029 0 0 9px;
+        &__title {
+          background-color: global.$color--blue;
+        }
+        &__text {
+          flex: 1;
+        }
+        &__btn {
+          display: inline-block;
+          position: relative;
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+          transition: 0.3s;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            width: 20px;
+            height: 3px;
+            border-radius: 3px;
+            background-color: global.$color--blue;
+          }
+          &::after {
+            transform: rotate(90deg);
+          }
+        }
+        .p-front__faq__faq.is-open &__btn::after {
+          display: none;
+        }
+      }
+      &__answer {
+        width: 90%;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s ease;
+        &__title {
+          margin-top: 20px;
+          background-color: global.$color--green;
+        }
+        &__text {
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+    .p-front__faq__faq.is-open .p-front__faq__faq__answer {
+      max-height: 300px;
+      overflow: visible;
+    }
+  }
 }
