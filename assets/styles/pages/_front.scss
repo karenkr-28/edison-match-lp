@@ -449,8 +449,7 @@
     &__item {
       display: grid;
       margin-bottom: 15px;
-      // grid-template-rows: 0fr;
-      overflow: hidden;
+      grid-template-rows: 0fr;
       transition: grid-template-rows 0.5s;
       &__icon {
         display: flex;
@@ -473,6 +472,7 @@
       &__inner {
         display: flex;
         gap: 20px;
+        overflow: hidden;
       }
       &__text {
         font-weight: 600;
@@ -502,6 +502,7 @@
             width: 20px;
             height: 3px;
             border-radius: 3px;
+            transition: 0.3s;
             background-color: global.$color--blue;
           }
           &::after {
@@ -524,6 +525,9 @@
     }
     details[open] &__item__question__btn::after {
       opacity: 0;
+    }
+    details[open] &__item {
+      grid-template-rows: 1fr;
     }
   }
 }

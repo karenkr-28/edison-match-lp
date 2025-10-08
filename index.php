@@ -351,7 +351,7 @@
                     よくあるご質問
                 </div>
             </h2>
-            <details id="p-front__faq__accordion" class="p-front__faq__accordion">
+            <details id="p-front__faq__accordion-1" class="p-front__faq__accordion js-accordion">
                 <summary class="p-front__faq__summary">
                     <p class="p-front__faq__item__icon p-front__faq__item__question__icon">Q</p>
                     <p class="p-front__faq__item__text p-front__faq__item__question__text">ここには質問が入ります。ここには質問が入ります。1</p>
@@ -364,11 +364,11 @@
                     </div>
                 </div>
             </details>
-            <details id="p-front__faq__accordion" class="p-front__faq__accordion">
+            <details id="p-front__faq__accordion-2" class="p-front__faq__accordion js-accordion">
                 <summary class="p-front__faq__summary">
-                        <p class="p-front__faq__item__icon p-front__faq__item__question__icon">Q</p>
-                        <p class="p-front__faq__item__text p-front__faq__item__question__text">ここには質問が入ります。ここには質問が入ります。2</p>
-                        <span class="p-front__faq__item__question__btn"></span>
+                    <p class="p-front__faq__item__icon p-front__faq__item__question__icon">Q</p>
+                    <p class="p-front__faq__item__text p-front__faq__item__question__text">ここには質問が入ります。ここには質問が入ります。2</p>
+                    <span class="p-front__faq__item__question__btn"></span>
                 </summary>
                 <div class="p-front__faq__item">
                     <div class="p-front__faq__item__inner">
@@ -377,7 +377,7 @@
                     </div>
                 </div>
             </details>
-            <details id="p-front__faq__accordion" class="p-front__faq__accordion">
+            <details id="p-front__faq__accordion-3" class="p-front__faq__accordion js-accordion">
                 <summary class="p-front__faq__summary">
                     <p class="p-front__faq__item__icon p-front__faq__item__question__icon">Q</p>
                     <p class="p-front__faq__item__text p-front__faq__item__question__text">ここには質問が入ります。ここには質問が入ります。3</p>

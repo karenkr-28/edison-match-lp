@@ -64,8 +64,10 @@ const initializeDetailsAccordion = (details) => {
     }
   });
 };
-const accordions = document.querySelectorAll(".p-front__faq__accordion");
+document.addEventListener("DOMContentLoaded", () => {
+  const accordions = document.querySelectorAll(".p-front__faq__accordion");
 
-accordions.forEach((accordion) => {
-  initializeAccordion(accordion);
+  accordions.forEach((accordion) => {
+    initializeDetailsAccordion(accordion);
+  });
 });
