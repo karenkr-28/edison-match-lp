@@ -195,43 +195,54 @@
                 </div>
             </h2>
             <div class="p-front__plan__content">
-                <div class="p-front__plan__card p-front__plan__card--green">
-                    <div class="p-front__plan__card__header">
-                        <h3 class="p-front__plan__card__title">CRM未導入のお客様</h3>
-                        <p class="p-front__plan__card__plan">Edison Match</p>
-                        <p class="p-front__plan__card__user">
-                            <span>１ユーザー</span><br>
-                            ¥5,000 JPY / 月
-                        </p>
+                <div class="p-front__plan__content__inner">
+                    <div class="p-front__plan__card p-front__plan__card--green">
+                        <div class="p-front__plan__card__header">
+                            <h3 class="p-front__plan__card__title">CRM未導入のお客様</h3>
+                            <p class="p-front__plan__card__plan">Edison Match</p>
+                            <p class="p-front__plan__card__user">
+                                <span>１ユーザー</span><br>
+                                ¥5,000 JPY / 月
+                            </p>
+                        </div>
+                        <ul class="p-front__plan__content--check">
+                            <li>30日間の無料トライアル</li>
+                            <li>初期費用：100,000円(税抜)</li>
+                            <li>最低契約期間：１年間</li>
+                            <li>最低契約数：５ユーザー</li>
+                            <li>ユーザー追加単価：１ユーザー</li>
+                            <li>ご契約の更新：１年間ごとに自動更新</li>
+                            <li>サポートサービス：メールによるテクニカル<br>サポート</li>
+                        </ul>
                     </div>
-                    <ul class="p-front__plan__content--check">
-                        <li>30日間の無料トライアル</li>
-                        <li>初期費用：100,000円(税抜)</li>
-                        <li>最低契約期間：１年間</li>
-                        <li>最低契約数：５ユーザー</li>
-                        <li>ユーザー追加単価：１ユーザー</li>
-                        <li>ご契約の更新：１年間ごとに自動更新</li>
-                        <li>サポートサービス：メールによるテクニカル<br>サポート</li>
-                    </ul>
+                    <button class="c-btn__fixed c-btn__fixed--green">
+                        <a href="<?php echo home_url('/#/'); ?>">見積もりを依頼する</a>
+                    </button>
                 </div>
-                <div class="p-front__plan__card p-front__plan__card--blue">
-                    <div class="p-front__plan__card__header">
-                        <h3 class="p-front__plan__card__title">CRM未導入のお客様</h3>
-                        <p class="p-front__plan__card__plan">Edison Match ISV版</p>
-                        <p class="p-front__plan__card__user">
-                            <span>１ユーザー</span><br>
-                            ¥2,000 JPY / 月
-                        </p>
+
+                <div class="p-front__plan__content__inner">
+                    <div class="p-front__plan__card p-front__plan__card--blue">
+                        <div class="p-front__plan__card__header">
+                            <h3 class="p-front__plan__card__title">CRM未導入のお客様</h3>
+                            <p class="p-front__plan__card__plan">Edison Match ISV版</p>
+                            <p class="p-front__plan__card__user">
+                                <span>１ユーザー</span><br>
+                                ¥2,000 JPY / 月
+                            </p>
+                        </div>
+                        <ul class="p-front__plan__content--check">
+                            <li>14日間の無料トライアル</li>
+                            <li>初期費用：100,000円(税抜)</li>
+                            <li>最低契約期間：１年間</li>
+                            <li>最低契約数：５ユーザー</li>
+                            <li>ユーザー追加単価：１ユーザー</li>
+                            <li>ご契約の更新：１年間ごとに自動更新</li>
+                            <li>サポートサービス：メールによるテクニカル<br>サポート</li>
+                        </ul>
                     </div>
-                    <ul class="p-front__plan__content--check">
-                        <li>14日間の無料トライアル</li>
-                        <li>初期費用：100,000円(税抜)</li>
-                        <li>最低契約期間：１年間</li>
-                        <li>最低契約数：５ユーザー</li>
-                        <li>ユーザー追加単価：１ユーザー</li>
-                        <li>ご契約の更新：１年間ごとに自動更新</li>
-                        <li>サポートサービス：メールによるテクニカル<br>サポート</li>
-                    </ul>
+                    <button class="c-btn__fixed c-btn__fixed--blue">
+                        <a href="<?php echo home_url('/#/'); ?>">見積もりを依頼する</a>
+                    </button>
                 </div>
             </div>
         </div>

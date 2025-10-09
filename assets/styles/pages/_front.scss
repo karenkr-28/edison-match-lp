@@ -328,6 +328,15 @@
         }
       }
     }
+    .c-btn__fixed {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-top: 90px;
+      width: 230px;
+      @include global.sp {
+        margin-top: 30px;
+      }
+    }
   }
 
   // 導入の流れ
