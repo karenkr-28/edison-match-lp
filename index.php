@@ -5,13 +5,27 @@
     <div class="p-front__bg"></div>
     <div class="p-front__fv" data-theme-uri="<?php echo get_template_directory_uri(); ?>">
         <div class="p-front__fv__content">
-            <p>“埋もれた情報”を“次のアクション”へつなげる、<br>
-                最強のマッチングパートナー</p>
+            <p class="p-front__fv__catchcopy">“埋もれた情報”を<br class="sp">“次のアクション”へつなげる、<br>
+                <span class="p-front__fv__catchcopy--purple">最強</span>のマッチングパートナー
+            </p>
+            <p class="p-front__fv__logo__text">エジソンマッチ</p>
             <img class="p-front__fv__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="EDISON MATCH">
+            <div class="p-front__fv__btn">
+                <button class="c-btn__fixed c-btn__fixed--green">
+                    <a href="<?php echo home_url('/#/'); ?>">無料トライアル</a>
+                </button>
+                <button class="c-btn__fixed c-btn__fixed--blue">
+                    <a href="<?php echo home_url('/#/'); ?>">資料ダウンロード</a>
+                </button>
+            </div>
+            <div class="p-front__fv__award">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_award_1.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_award_2.png">
+            </div>
         </div>
         <img class="p-front__fv__main-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_main.png">
-
         <img class="p-front__fv__bottom-bg" src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_bottom.png">
+
     </div>
 
     <section class="p-front__concept">
@@ -249,7 +263,6 @@
     </section>
 
     <section class="p-front__flow">
-        <img class="p-front__features__backimg-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/front/feature_img_left.png">
         <div class="l-inner">
             <h2 class="c-title--icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
