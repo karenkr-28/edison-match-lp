@@ -11,12 +11,13 @@
             <p class="p-front__fv__logo__text">エジソンマッチ</p>
             <img class="p-front__fv__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="EDISON MATCH">
             <div class="p-front__fv__btn">
-                <button class="c-btn__fixed c-btn__fixed--green">
-                    <a href="<?php echo home_url('/#/'); ?>">無料トライアル</a>
-                </button>
-                <button class="c-btn__fixed c-btn__fixed--blue">
-                    <a href="<?php echo home_url('/#/'); ?>">資料ダウンロード</a>
-                </button>
+                <a class="c-btn__ctr c-btn__ctr--green" href="<?php echo home_url('/contact/'); ?>">
+                    無料トライアル
+                    <img class="c-btn__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow.svg">
+                </a>
+                <a class="c-btn__ctr c-btn__ctr--blue" href="<?php echo home_url('/contact/'); ?>">資料ダウンロード</a>
+                <img class="c-btn__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow.svg">
+
             </div>
             <div class="p-front__fv__award">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_award_1.png">
