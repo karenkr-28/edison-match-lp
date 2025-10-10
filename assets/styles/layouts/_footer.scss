@@ -28,6 +28,10 @@
     list-style: none;
     li {
       margin-bottom: 17px;
+      a {
+        display: flex;
+        gap: 7px;
+      }
     }
     &__box {
       display: flex;
@@ -36,7 +40,6 @@
     }
     &__right li {
       display: flex;
-      gap: 5px;
     }
   }
 }

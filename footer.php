@@ -3,7 +3,7 @@
         <div class="l-footer__info">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="EDISON MATCH">
             <p>
-                thomas株式会社<br>
+                thomas<br>
                 東京都港区六本木7-21-24 THE MODULE roppongi 2F
             </p>
         </div>
@@ -17,16 +17,19 @@
             </div>
             <div class="l-footer__menu l-footer__menu__right">
                 <li>
-                    <a href="https://thomas-gr.com/" target="_blank">企業サイト</a>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/external_link.svg" alt="EDISON MATCH">
+                    <a href="https://thomas-gr.com/" target="_blank">企業サイト
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/external_link.svg" alt="link_icon">
+                    </a>
                 </li>
                 <li>
-                    <a href="https://careers.thomas-gr.com/" target="_blank">採用情報</a>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/external_link.svg" alt="EDISON MATCH">
+                    <a href="https://careers.thomas-gr.com/" target="_blank">採用情報
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/external_link.svg" alt="link_icon">
+                    </a>
                 </li>
                 <li>
-                    <a href="https://appexchangejp.salesforce.com/appxListingDetail?listingId=7c5c273d-20cf-47ce-b667-fee02f065321" target="_blank">AppExchange</a>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/external_link.svg" alt="EDISON MATCH">
+                    <a href="https://appexchangejp.salesforce.com/appxListingDetail?listingId=7c5c273d-20cf-47ce-b667-fee02f065321" target="_blank">AppExchange
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/external_link.svg" alt="link_icon">
+                    </a>
                 </li>
             </div>
         </div>
