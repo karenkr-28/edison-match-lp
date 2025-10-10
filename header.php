@@ -34,15 +34,23 @@
                     <li><a href="<?php echo home_url('/#news'); ?>">お知らせ</a></li>
                 </ul>
             </div>
-            <button><a href="<?php echo home_url('/#contact'); ?>">お問い合わせ</a></button>
+            <a class="c-btn-primary" href="<?php echo home_url('/#contact'); ?>">お問い合わせ</a>
         </div>
     </header>
 
-    <div class="c-btn__box">
-        <button class="c-btn__fixed c-btn__fixed--green">
-            <a href="<?php echo home_url('/#/'); ?>">無料トライアル</a>
+    <div class="l-sidebar">
+        <!-- totpp -->
+        <button class="l-sidebar__totop">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/totop_arrow.svg">
         </button>
-        <button class="c-btn__fixed c-btn__fixed--blue">
-            <a href="<?php echo home_url('/#/'); ?>">資料ダウンロード</a>
-        </button>
+        <div class="l-sidebar__cta-wrap">
+            <a href="<?php echo home_url('/contact/'); ?>" class="c-btn-cta c-btn-cta--green">
+                無料トライアル
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_green.svg" alt="" class="c-btn-cta__arrow">
+            </a>
+            <a href="<?php echo home_url('/contact/'); ?>" class="c-btn-cta c-btn-cta--blue">
+                資料ダウンロード
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg" alt="" class="c-btn-cta__arrow">
+            </a>
+        </div>
     </div>

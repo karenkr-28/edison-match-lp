@@ -11,12 +11,16 @@
             <p class="p-front__fv__logo__text">エジソンマッチ</p>
             <img class="p-front__fv__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="EDISON MATCH">
             <div class="p-front__fv__btn">
-                <button class="c-btn__fixed c-btn__fixed--green">
-                    <a href="<?php echo home_url('/#/'); ?>">無料トライアル</a>
-                </button>
-                <button class="c-btn__fixed c-btn__fixed--blue">
-                    <a href="<?php echo home_url('/#/'); ?>">資料ダウンロード</a>
-                </button>
+                <a class="c-btn-cta c-btn-cta--green" href="<?php echo home_url('/contact/'); ?>">
+                    無料トライアル
+                    <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_green.svg">
+                </a>
+
+                <a class="c-btn-cta c-btn-cta--blue" href="<?php echo home_url('/contact/'); ?>">
+                    資料ダウンロード
+                    <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg">
+                </a>
+
             </div>
             <div class="p-front__fv__award">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_award_1.png">
@@ -229,9 +233,9 @@
                             <li>サポートサービス：メールによるテクニカル<br>サポート</li>
                         </ul>
                     </div>
-                    <button class="c-btn__fixed c-btn__fixed--green">
-                        <a href="<?php echo home_url('/#/'); ?>">見積もりを依頼する</a>
-                    </button>
+                    <a href="<?php echo home_url('/#/'); ?>" class="c-btn__fixed c-btn__fixed--green">
+                        見積もりを依頼する
+                    </a>
                 </div>
 
                 <div class="p-front__plan__content__inner">
@@ -254,9 +258,9 @@
                             <li>サポートサービス：メールによるテクニカル<br>サポート</li>
                         </ul>
                     </div>
-                    <button class="c-btn__fixed c-btn__fixed--blue">
-                        <a href="<?php echo home_url('/#/'); ?>">見積もりを依頼する</a>
-                    </button>
+                    <a href="<?php echo home_url('/#/'); ?>" class="c-btn__fixed c-btn__fixed--blue">
+                        見積もりを依頼する
+                    </a>
                 </div>
             </div>
         </div>
