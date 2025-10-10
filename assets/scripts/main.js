@@ -1,13 +1,4 @@
 // よくあるご質問
-// document
-//   .querySelectorAll(".p-front__faq__item__question")
-//   .forEach((btn) => {
-//     btn.addEventListener("click", function () {
-//       const faqDiv = btn.closest(".p-front__faq__item");
-//       faqDiv.classList.toggle("is-open");
-//     });
-//   });
-
 const initializeDetailsAccordion = (details) => {
   const summary = details.querySelector("summary");
   const panel = details.querySelector("summary + *");
@@ -71,3 +62,20 @@ document.addEventListener("DOMContentLoaded", () => {
     initializeDetailsAccordion(accordion);
   });
 });
+
+// TOTOP
+const sidebar = document.querySelector(".l-sidebar");
+const pagetop_btn = document.querySelector(".l-sidebar__totop");
+pagetop_btn.addEventListener("click", scroll_top);
+function scroll_top() {
+  window.scroll({ top: 0, behavior: "smooth" });
+}
+
+window.addEventListener("scroll", scroll_event);
+function scroll_event() {
+  if (window.pageYOffset > 100) {
+    sidebar.classList.add("is-visible");
+  } else {
+    sidebar.classList.remove("is-visible");
+  }
+}

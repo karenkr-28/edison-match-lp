@@ -16,7 +16,7 @@
                     <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_green.svg">
                 </a>
 
-                <a class="c-btn-cta c-btn-cta--blue" href="<?php echo home_url('/contact/'); ?>">
+                <a class="c-btn-cta c-btn-cta--blue" href="<?php echo home_url('/contact'); ?>">
                     資料ダウンロード
                     <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg">
                 </a>
@@ -29,10 +29,9 @@
         </div>
         <img class="p-front__fv__main-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_main.png">
         <img class="p-front__fv__bottom-bg" src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_bottom.png">
-
     </div>
 
-    <section class="p-front__concept">
+    <section class="p-front__concept" id="concept">
         <div class="l-inner">
             <h2 class="c-title--icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
@@ -41,7 +40,7 @@
                 </div>
             </h2>
             <p class="c-catchcopy">
-                <span class="c-catchcopy__highlight">データを資産として活用</span>することで、<br>
+                <span class="c-catchcopy__highlight">データを資産として活用</span>することで、<br class="pc">
                 <span class="c-catchcopy__highlight">収益向上を実現</span>します。
             </p>
             <div class="p-front__concept__explanation">
@@ -61,7 +60,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
                 <div>
                     <span>エジソンマッチ</span>
-                    EDISON MATCH とは
+                    Edison Match とは
                 </div>
             </h2>
             <p class="c-catchcopy">
@@ -103,7 +102,7 @@
         </div>
     </section>
 
-    <section class="p-front__features">
+    <section class="p-front__features" id="features">
         <img class="p-front__features__backimg-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/front/feature_img_left.png">
         <div class="l-inner">
             <h2 class="c-title--icon">
@@ -121,7 +120,8 @@
                         </h3>
                         <p class="p-front__features__item__text">
                             人材業界での活用に最適化された候補者×求人のマッチングセットを標準装備。<br>
-                            マッチング対象のオブジェクトや検索項目も初期構築済みのため、導入初日から即利用が可能です。貴社の業務フローや商習慣に応じたカスタマイズにも柔軟に対応します。
+                            マッチング対象のオブジェクトや検索項目も初期構築済みのため、導入初日から即利用が可能です。貴社の業務フローや商習慣に応じたカスタマイズにも柔軟に対応します。<br>
+                            ※OEMのみの提供
                         </p>
                     </div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/feature_point_01.png">
@@ -204,7 +204,7 @@
 
     <!-- 実績 -->
 
-    <section class="p-front__plan">
+    <section class="p-front__plan" id="plan">
         <div class="l-inner">
             <h2 class="c-title--icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip_green.svg">
@@ -233,8 +233,9 @@
                             <li>サポートサービス：メールによるテクニカル<br>サポート</li>
                         </ul>
                     </div>
-                    <a href="<?php echo home_url('/#/'); ?>" class="c-btn__fixed c-btn__fixed--green">
+                    <a href="<?php echo home_url('/contact/'); ?>" class="c-btn-cta c-btn-cta--green">
                         見積もりを依頼する
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_green.svg" alt="button" class="c-btn-cta__arrow">
                     </a>
                 </div>
 
@@ -258,15 +259,16 @@
                             <li>サポートサービス：メールによるテクニカル<br>サポート</li>
                         </ul>
                     </div>
-                    <a href="<?php echo home_url('/#/'); ?>" class="c-btn__fixed c-btn__fixed--blue">
+                    <a href="<?php echo home_url('/contact/'); ?>" class="c-btn-cta c-btn-cta--blue">
                         見積もりを依頼する
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg" alt="button" class="c-btn-cta__arrow">
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="p-front__flow">
+    <section class="p-front__flow" id="flow">
         <div class="l-inner">
             <h2 class="c-title--icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
@@ -370,8 +372,8 @@
             </div>
         </div>
     </section>
-
-    <section class="p-front__faq">
+    <!-- 
+    <section class="p-front__faq" id="faq">
         <div class="l-inner">
             <h2 class="c-title--icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip_blue.svg">
@@ -419,7 +421,7 @@
                 </div>
             </details>
         </div>
-    </section>
+    </section> -->
 
     <section class="p-front__customer">
         <p>業種・業態を問わず<br class="sp"><span>幅広くご導入</span>いただいております</p>

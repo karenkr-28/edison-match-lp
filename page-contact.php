@@ -4,7 +4,7 @@ Template Name: Contact
 */
 get_header(); ?>
 
-<main class="p-contact">
+<main class="p-contact" id="contact">
     <div class="l-inner">
 
         <h1>お問い合わせ</h1>
