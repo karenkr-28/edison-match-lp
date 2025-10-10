@@ -17,15 +17,15 @@
             </div>
             <div class="l-footer__menu l-footer__menu__right">
                 <li>
-                    <a href="<?php echo home_url('/#/'); ?>">企業サイト</a>
+                    <a href="https://careers.thomas-gr.com/" target="_blank">企業サイト</a>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/external_link.svg" alt="EDISON MATCH">
                 </li>
                 <li>
-                    <a href="<?php echo home_url('/#/'); ?>">採用情報</a>
+                    <a href="https://thomas-gr.com/" target="_blank">採用情報</a>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/external_link.svg" alt="EDISON MATCH">
                 </li>
                 <li>
-                    <a href="<?php echo home_url('/#/'); ?>">AppExchange</a>
+                    <a href="https://appexchangejp.salesforce.com/appxListingDetail?listingId=7c5c273d-20cf-47ce-b667-fee02f065321" target="_blank">AppExchange</a>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/external_link.svg" alt="EDISON MATCH">
                 </li>
             </div>
