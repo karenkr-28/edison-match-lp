@@ -27,14 +27,14 @@
                 <ul>
                     <li><a href="<?php echo home_url('/#concept'); ?>">コンセプト</a></li>
                     <li><a href="<?php echo home_url('/#features'); ?>">特徴</a></li>
-                    <li><a href="<?php echo home_url('/#works'); ?>">実績</a></li>
+                    <li><a href="<?php echo home_url('/#'); ?>">実績</a></li>
                     <li><a href="<?php echo home_url('/#plan'); ?>">プラン</a></li>
                     <li><a href="<?php echo home_url('/#flow'); ?>">導入の流れ</a></li>
                     <li><a href="<?php echo home_url('/#faq'); ?>">よくあるご質問</a></li>
-                    <li><a href="<?php echo home_url('/#news'); ?>">お知らせ</a></li>
+                    <li><a href="<?php echo home_url('/#'); ?>">お知らせ</a></li>
                 </ul>
             </div>
-            <a class="c-btn-primary" href="<?php echo home_url('/#contact'); ?>">お問い合わせ</a>
+            <a class="c-btn-primary" href="<?php echo home_url('/contact'); ?>">お問い合わせ</a>
         </div>
     </header>
 

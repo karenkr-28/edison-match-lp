@@ -29,10 +29,9 @@
         </div>
         <img class="p-front__fv__main-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_main.png">
         <img class="p-front__fv__bottom-bg" src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_bottom.png">
-
     </div>
 
-    <section class="p-front__concept">
+    <section class="p-front__concept" id="concept">
         <div class="l-inner">
             <h2 class="c-title--icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
@@ -103,7 +102,7 @@
         </div>
     </section>
 
-    <section class="p-front__features">
+    <section class="p-front__features" id="features">
         <img class="p-front__features__backimg-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/front/feature_img_left.png">
         <div class="l-inner">
             <h2 class="c-title--icon">
@@ -204,7 +203,7 @@
 
     <!-- 実績 -->
 
-    <section class="p-front__plan">
+    <section class="p-front__plan" id="plan">
         <div class="l-inner">
             <h2 class="c-title--icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip_green.svg">
@@ -233,8 +232,9 @@
                             <li>サポートサービス：メールによるテクニカル<br>サポート</li>
                         </ul>
                     </div>
-                    <a href="<?php echo home_url('/#/'); ?>" class="c-btn__fixed c-btn__fixed--green">
+                    <a href="<?php echo home_url('/contact/'); ?>" class="c-btn-cta c-btn-cta--green">
                         見積もりを依頼する
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_green.svg" alt="" class="c-btn-cta__arrow">
                     </a>
                 </div>
 
@@ -258,15 +258,16 @@
                             <li>サポートサービス：メールによるテクニカル<br>サポート</li>
                         </ul>
                     </div>
-                    <a href="<?php echo home_url('/#/'); ?>" class="c-btn__fixed c-btn__fixed--blue">
+                    <a href="<?php echo home_url('/contact/'); ?>" class="c-btn-cta c-btn-cta--blue">
                         見積もりを依頼する
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg" alt="" class="c-btn-cta__arrow">
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="p-front__flow">
+    <section class="p-front__flow" id="flow">
         <div class="l-inner">
             <h2 class="c-title--icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
@@ -371,7 +372,7 @@
         </div>
     </section>
 
-    <section class="p-front__faq">
+    <section class="p-front__faq" id="faq">
         <div class="l-inner">
             <h2 class="c-title--icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip_blue.svg">
