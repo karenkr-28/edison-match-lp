@@ -1,20 +1,34 @@
 <footer class="l-footer">
     <div class="l-footer__inner">
         <div class="l-footer__info">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="EDISON MATCH">
             <p>
-                弁護士法人大阪西総合法律事務所<br>
-                <span>TEL：06‐6208‐8771</span><br>
-                受付時間　/　9:30〜17:30 土・日・祝日除く
+                thomas株式会社<br>
+                東京都港区六本木7-21-24 THE MODULE roppongi 2F
             </p>
         </div>
-        <div class="l-footer__menu">
-            <ul>
-                <li><a href="<?php echo home_url('/about/'); ?>">事務所紹介</a></li>
-                <li><a href="<?php echo home_url('/service/'); ?>">取扱業務</a></li>
-                <li><a href="<?php echo home_url('/attorneys/'); ?>">所属弁護士</a></li>
-                <li><a href="<?php echo home_url('/category/news/'); ?>">お知らせ</a></li>
-                <li><a href="<?php echo home_url('/privacy/'); ?>">個人情報保護方針</a></li>
-            </ul>
+        <div class="l-footer__menu__box">
+            <div class="l-footer__menu l-footer__menu__left">
+                <ul>
+                    <li><a href="<?php echo home_url('/#/'); ?>">お知らせ</a></li>
+                    <li><a href="<?php echo home_url('/#/'); ?>">お問い合わせ</a></li>
+                    <li><a href="<?php echo home_url('/#/'); ?>">資料ダウンロード</a></li>
+                </ul>
+            </div>
+            <div class="l-footer__menu l-footer__menu__right">
+                <li>
+                    <a href="<?php echo home_url('/#/'); ?>">企業サイト</a>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/external_link.svg" alt="EDISON MATCH">
+                </li>
+                <li>
+                    <a href="<?php echo home_url('/#/'); ?>">採用情報</a>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/external_link.svg" alt="EDISON MATCH">
+                </li>
+                <li>
+                    <a href="<?php echo home_url('/#/'); ?>">AppExchange</a>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/external_link.svg" alt="EDISON MATCH">
+                </li>
+            </div>
         </div>
     </div>
 </footer>

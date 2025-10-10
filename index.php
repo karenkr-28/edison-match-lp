@@ -5,13 +5,27 @@
     <div class="p-front__bg"></div>
     <div class="p-front__fv" data-theme-uri="<?php echo get_template_directory_uri(); ?>">
         <div class="p-front__fv__content">
-            <p>“埋もれた情報”を“次のアクション”へつなげる、<br>
-                最強のマッチングパートナー</p>
+            <p class="p-front__fv__catchcopy">“埋もれた情報”を<br class="sp">“次のアクション”へつなげる、<br>
+                <span class="p-front__fv__catchcopy--purple">最強</span>のマッチングパートナー
+            </p>
+            <p class="p-front__fv__logo__text">エジソンマッチ</p>
             <img class="p-front__fv__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="EDISON MATCH">
+            <div class="p-front__fv__btn">
+                <button class="c-btn__fixed c-btn__fixed--green">
+                    <a href="<?php echo home_url('/#/'); ?>">無料トライアル</a>
+                </button>
+                <button class="c-btn__fixed c-btn__fixed--blue">
+                    <a href="<?php echo home_url('/#/'); ?>">資料ダウンロード</a>
+                </button>
+            </div>
+            <div class="p-front__fv__award">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_award_1.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_award_2.png">
+            </div>
         </div>
         <img class="p-front__fv__main-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_main.png">
-
         <img class="p-front__fv__bottom-bg" src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_bottom.png">
+
     </div>
 
     <section class="p-front__concept">
@@ -195,47 +209,220 @@
                 </div>
             </h2>
             <div class="p-front__plan__content">
-                <div class="p-front__plan__card p-front__plan__card--green">
-                    <div class="p-front__plan__card__header">
-                        <h3 class="p-front__plan__card__title">CRM未導入のお客様</h3>
-                        <p class="p-front__plan__card__plan">Edison Match</p>
-                        <p class="p-front__plan__card__user">
-                            <span>１ユーザー</span><br>
-                            ¥5,000 JPY / 月
-                        </p>
+                <div class="p-front__plan__content__inner">
+                    <div class="p-front__plan__card p-front__plan__card--green">
+                        <div class="p-front__plan__card__header">
+                            <h3 class="p-front__plan__card__title">CRM未導入のお客様</h3>
+                            <p class="p-front__plan__card__plan">Edison Match</p>
+                            <p class="p-front__plan__card__user">
+                                <span>１ユーザー</span><br>
+                                ¥5,000 JPY / 月
+                            </p>
+                        </div>
+                        <ul class="p-front__plan__content--check">
+                            <li>30日間の無料トライアル</li>
+                            <li>初期費用：100,000円(税抜)</li>
+                            <li>最低契約期間：１年間</li>
+                            <li>最低契約数：５ユーザー</li>
+                            <li>ユーザー追加単価：１ユーザー</li>
+                            <li>ご契約の更新：１年間ごとに自動更新</li>
+                            <li>サポートサービス：メールによるテクニカル<br>サポート</li>
+                        </ul>
                     </div>
-                    <ul class="p-front__plan__content--check">
-                        <li>30日間の無料トライアル</li>
-                        <li>初期費用：100,000円(税抜)</li>
-                        <li>最低契約期間：１年間</li>
-                        <li>最低契約数：５ユーザー</li>
-                        <li>ユーザー追加単価：１ユーザー</li>
-                        <li>ご契約の更新：１年間ごとに自動更新</li>
-                        <li>サポートサービス：メールによるテクニカル<br>サポート</li>
-                    </ul>
+                    <button class="c-btn__fixed c-btn__fixed--green">
+                        <a href="<?php echo home_url('/#/'); ?>">見積もりを依頼する</a>
+                    </button>
                 </div>
-                <div class="p-front__plan__card p-front__plan__card--blue">
-                    <div class="p-front__plan__card__header">
-                        <h3 class="p-front__plan__card__title">CRM未導入のお客様</h3>
-                        <p class="p-front__plan__card__plan">Edison Match ISV版</p>
-                        <p class="p-front__plan__card__user">
-                            <span>１ユーザー</span><br>
-                            ¥2,000 JPY / 月
-                        </p>
+
+                <div class="p-front__plan__content__inner">
+                    <div class="p-front__plan__card p-front__plan__card--blue">
+                        <div class="p-front__plan__card__header">
+                            <h3 class="p-front__plan__card__title">CRM未導入のお客様</h3>
+                            <p class="p-front__plan__card__plan">Edison Match ISV版</p>
+                            <p class="p-front__plan__card__user">
+                                <span>１ユーザー</span><br>
+                                ¥2,000 JPY / 月
+                            </p>
+                        </div>
+                        <ul class="p-front__plan__content--check">
+                            <li>14日間の無料トライアル</li>
+                            <li>初期費用：100,000円(税抜)</li>
+                            <li>最低契約期間：１年間</li>
+                            <li>最低契約数：５ユーザー</li>
+                            <li>ユーザー追加単価：１ユーザー</li>
+                            <li>ご契約の更新：１年間ごとに自動更新</li>
+                            <li>サポートサービス：メールによるテクニカル<br>サポート</li>
+                        </ul>
                     </div>
-                    <ul class="p-front__plan__content--check">
-                        <li>14日間の無料トライアル</li>
-                        <li>初期費用：100,000円(税抜)</li>
-                        <li>最低契約期間：１年間</li>
-                        <li>最低契約数：５ユーザー</li>
-                        <li>ユーザー追加単価：１ユーザー</li>
-                        <li>ご契約の更新：１年間ごとに自動更新</li>
-                        <li>サポートサービス：メールによるテクニカル<br>サポート</li>
-                    </ul>
+                    <button class="c-btn__fixed c-btn__fixed--blue">
+                        <a href="<?php echo home_url('/#/'); ?>">見積もりを依頼する</a>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="p-front__flow">
+        <div class="l-inner">
+            <h2 class="c-title--icon">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip.svg">
+                <div>
+                    導入の流れ
+                </div>
+            </h2>
+            <p>
+                お客様の導入・運用・定着化のため、カスタマーサクセスチームが以下の支援を行います。
+            </p>
+            <div class="p-front__flow__head p-front__flow__head--purple">
+                <h3>運用開始までのフロー</h3>
+                <p>ご検討・お見積もりの段階から、専門のスタッフが丁寧にサポートいたします。</p>
+            </div>
+            <div class="p-front__flow__step">
+                <div class="p-front__flow__step__contents">
+                    <div class="p-front__flow__step__contents__left">
+                        <p>STEP 01</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_1.svg">
+                    </div>
+                    <div class="p-front__flow__step__contents__right">
+                        <h4>お問い合わせ</h4>
+                        <p>Edison Matchの導入をご検討されている方は、まずはこちらからお問い合わせ。</p>
+                    </div>
+                </div>
+                <div class="p-front__flow__step__contents">
+                    <div class="p-front__flow__step__contents__left">
+                        <p>STEP 02</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_2.svg">
+                    </div>
+                    <div class="p-front__flow__step__contents__right">
+                        <h4>初回キックオフ</h4>
+                        <p>ご契約後、キックオフミーティングで、詳細な要件定義や運用のステップを検討。</p>
+                    </div>
+                </div>
+                <div class="p-front__flow__step__contents">
+                    <div class="p-front__flow__step__contents__left">
+                        <p>STEP 03</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_3.svg">
+                    </div>
+                    <div class="p-front__flow__step__contents__right">
+                        <h4>お問い合わせ</h4>
+                        <p>担当者が伴走し、インストールやマニュアル作成、説明会を実施。</p>
+                    </div>
+                </div>
+                <div class="p-front__flow__step__contents">
+                    <div class="p-front__flow__step__contents__left">
+                        <p>STEP 04</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_4.svg">
+                    </div>
+                    <div class="p-front__flow__step__contents__right">
+                        <h4>運営開始</h4>
+                        <p>サービスの利用開始と同時に、現場への定着化に向けた支援もスタート。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-front__flow__head p-front__flow__head--green">
+                <h3>運用開始後のサポート</h3>
+                <p>定着化における組織の課題を熟知したカスタマーサクセスが引き続きご支援します。</p>
+            </div>
+            <div class="p-front__flow__step">
+                <div class="p-front__flow__step__contents">
+                    <div class="p-front__flow__step__contents__left">
+                        <p>STEP 05</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_5.svg">
+                    </div>
+                    <div class="p-front__flow__step__contents__right">
+                        <h4>定期的なフォローアップ</h4>
+                        <ul>
+                            <li>利用状況の定期フィードバック</li>
+                            <li>運用に関する各種ご相談</li>
+                            <li>効果測定指標の設定支援</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-front__flow__step__contents">
+                    <div class="p-front__flow__step__contents__left">
+                        <p>STEP 06</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_6.svg">
+                    </div>
+                    <div class="p-front__flow__step__contents__right">
+                        <h4>サポートコンテンツのご提供</h4>
+                        <ul>
+                            <li>活用ガイドのご案内</li>
+                            <li>活用Tipsの配信</li>
+                            <li>テクニアカルサポート窓口</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-front__flow__step__contents">
+                    <div class="p-front__flow__step__contents__left">
+                        <p>STEP 07</p>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_7.svg">
+                    </div>
+                    <div class="p-front__flow__step__contents__right">
+                        <h4>定着化</h4>
+                        <p>さらなる成果アップに向けた継続的な支援。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-front__faq">
+        <div class="l-inner">
+            <h2 class="c-title--icon">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clip_blue.svg">
+                <div>
+                    よくあるご質問
+                </div>
+            </h2>
+            <details id="p-front__faq__accordion-1" class="p-front__faq__accordion js-accordion">
+                <summary class="p-front__faq__summary">
+                    <p class="p-front__faq__item__icon p-front__faq__item__question__icon">Q</p>
+                    <p class="p-front__faq__item__text p-front__faq__item__question__text">ここには質問が入ります。ここには質問が入ります。1</p>
+                    <span class="p-front__faq__item__question__btn"></span>
+                </summary>
+                <div class="p-front__faq__item">
+                    <div class="p-front__faq__item__inner">
+                        <p class="p-front__faq__item__icon p-front__faq__item__answer__icon">A</p>
+                        <p class="p-front__faq__item__text p-front__faq__item__answer__text">ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには質問が入ります。ここには質問が入ります。1</p>
+                    </div>
+                </div>
+            </details>
+            <details id="p-front__faq__accordion-2" class="p-front__faq__accordion js-accordion">
+                <summary class="p-front__faq__summary">
+                    <p class="p-front__faq__item__icon p-front__faq__item__question__icon">Q</p>
+                    <p class="p-front__faq__item__text p-front__faq__item__question__text">ここには質問が入ります。ここには質問が入ります。2</p>
+                    <span class="p-front__faq__item__question__btn"></span>
+                </summary>
+                <div class="p-front__faq__item">
+                    <div class="p-front__faq__item__inner">
+                        <p class="p-front__faq__item__icon p-front__faq__item__answer__icon">A</p>
+                        <p class="p-front__faq__item__text p-front__faq__item__answer__text">ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには質問が入ります。ここには質問が入ります。2</p>
+                    </div>
+                </div>
+            </details>
+            <details id="p-front__faq__accordion-3" class="p-front__faq__accordion js-accordion">
+                <summary class="p-front__faq__summary">
+                    <p class="p-front__faq__item__icon p-front__faq__item__question__icon">Q</p>
+                    <p class="p-front__faq__item__text p-front__faq__item__question__text">ここには質問が入ります。ここには質問が入ります。3</p>
+                    <span class="p-front__faq__item__question__btn"></span>
+                </summary>
+                <div class="p-front__faq__item">
+                    <div class="p-front__faq__item__inner">
+                        <p class="p-front__faq__item__icon p-front__faq__item__answer__icon">A</p>
+                        <p class="p-front__faq__item__text p-front__faq__item__answer__text">ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには文章が入ります。ここには質問が入ります。ここには質問が入ります。3</p>
+                    </div>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <section class="p-front__customer">
+        <p>業種・業態を問わず<br class="sp"><span>幅広くご導入</span>いただいております</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/case_study.png">
+    </section>
+
+
 </main>
 
 <?php get_footer(); ?>

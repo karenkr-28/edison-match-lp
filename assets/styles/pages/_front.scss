@@ -23,9 +23,14 @@
     &__main-img {
       position: absolute;
       right: 0;
-      top: 20px;
-      width: 40%;
+      top: 40px;
+      width: 50%;
       max-width: 600px;
+      @include global.sp {
+        left: 30%;
+        width: auto;
+        height: 80vh;
+      }
     }
 
     &__content {
@@ -34,10 +39,63 @@
       max-width: 500px;
       margin-left: 5%;
       z-index: 1;
+      @include global.sp {
+        position: absolute;
+        width: 80%;
+      }
     }
-
+    &__catchcopy {
+      margin-bottom: 15px;
+      font-size: 2rem;
+      line-height: 3rem;
+      @include global.sp {
+        font-size: 1.6rem;
+      }
+      &--purple {
+        font-size: 2.7rem;
+        font-weight: bold;
+        color: global.$color--purple;
+        @include global.sp {
+          font-size: 2.2rem;
+        }
+      }
+    }
     &__logo {
       width: 100%;
+      margin-bottom: 25px;
+      &__text {
+        position: absolute;
+        top: 80px;
+        left: 10px;
+        font-size: 2rem;
+        font-weight: bold;
+        @include global.sp {
+          top: 100px;
+          left: 5px;
+          font-size: 1.6rem;
+        }
+      }
+    }
+    &__btn {
+      display: flex;
+      margin-bottom: 20px;
+      @include global.sp {
+        display: none;
+      }
+    }
+    .c-btn__fixed {
+      margin: 0 30px 0 0;
+    }
+    &__award {
+      display: flex;
+      gap: 20px;
+      img {
+        width: auto;
+        height: 100px;
+        @include global.sp {
+          height: 70px;
+        }
+      }
     }
     &__bottom-bg {
       position: absolute;
@@ -113,7 +171,6 @@
       }
       &__index {
         font-size: 4.6rem;
-        font-weight: 500;
       }
       &__title {
         margin-top: -20px;
@@ -133,7 +190,6 @@
         max-width: 210px;
         line-height: normal;
         color: #171717;
-        font-weight: 500;
       }
       &--one {
         color: global.$color--purple;
@@ -220,14 +276,10 @@
       &__title {
         margin-bottom: 20px;
         font-size: 2.2rem;
-        font-weight: 500;
         span {
           font-weight: 800;
           color: global.$color--purple;
         }
-      }
-      &__text {
-        font-weight: 500;
       }
     }
   }
@@ -237,7 +289,6 @@
     padding-bottom: 80px;
     background-color: global.$color--gray;
     p {
-      font-weight: 500;
       margin-bottom: 50px;
     }
     img {
@@ -266,6 +317,7 @@
           padding-left: 20px;
           padding-bottom: 7px;
           font-size: 1.2rem;
+          font-weight: normal;
         }
       }
     }
@@ -331,8 +383,241 @@
         line-height: normal;
         span {
           font-size: 1.4rem;
-          font-weight: 500;
         }
+      }
+    }
+    .c-btn__fixed {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-top: 90px;
+      width: 230px;
+      @include global.sp {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  // 導入の流れ
+  &__flow {
+    padding-top: 125px;
+    padding-bottom: 185px;
+    background-color: global.$color--gray;
+
+    &__head {
+      margin-top: 70px;
+      margin-bottom: 70px;
+      h3 {
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 1.9rem;
+        border-bottom: 4px solid;
+      }
+      &--purple h3 {
+        color: global.$color--purple;
+        border-color: global.$color--purple;
+      }
+      &--green h3 {
+        margin-top: 100px;
+        color: global.$color--blue;
+        border-color: global.$color--blue;
+      }
+    }
+    &__step {
+      &__contents {
+        display: flex;
+        gap: 50px;
+        margin: 15px 0;
+        @include global.sp {
+          gap: 20px;
+        }
+        &:nth-of-type(4) {
+          position: relative;
+          margin-bottom: 150px;
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            bottom: -90px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 25px solid global.$color--purple;
+          }
+        }
+        &__left {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          @include global.sp {
+            flex: 0 0 60px;
+          }
+          p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            @include global.sp {
+              font-size: 1.3rem;
+            }
+          }
+        }
+        &__right {
+          h4 {
+            margin-bottom: 16px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            @include global.sp {
+              margin-bottom: 5px;
+              font-size: 1.6rem;
+            }
+          }
+          ul {
+            margin-left: 30px;
+            list-style: disc;
+            li {
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  // よくあるご質問
+  &__faq {
+    padding-top: 90px;
+    padding-bottom: 150px;
+    .c-title--icon {
+      color: global.$color--blue;
+      margin-bottom: 70px;
+    }
+    &__accordion {
+      max-inline-size: 90%;
+      margin-bottom: 15px;
+    }
+    &__summary {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      height: 60px;
+      background-color: #fff;
+      box-shadow: #00000029 0 0 9px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: 0.3s;
+      @include global.sp {
+        height: fit-content;
+        gap: 10px;
+      }
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+    &__item {
+      display: grid;
+      margin-bottom: 15px;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.5s;
+      &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        @include global.sp {
+          width: 30px;
+          height: 30px;
+          font-size: 1.8rem;
+        }
+      }
+      &__inner {
+        display: flex;
+        gap: 20px;
+        overflow: hidden;
+      }
+      &__text {
+        font-weight: 600;
+        flex: 1;
+        @include global.sp {
+          padding: 10px;
+          line-height: 1.9rem;
+        }
+      }
+      &__question {
+        &__icon {
+          background-color: global.$color--blue;
+        }
+        &__btn {
+          // display: inline-block;
+          position: relative;
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+          transition: 0.3s;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            width: 20px;
+            height: 3px;
+            border-radius: 3px;
+            transition: 0.3s;
+            background-color: global.$color--blue;
+          }
+          &::after {
+            transform: rotate(90deg);
+          }
+        }
+      }
+      &__answer {
+        overflow: hidden;
+        &__icon {
+          margin-top: 20px;
+          background-color: global.$color--green;
+        }
+        &__text {
+          margin-right: 80px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+    details[open] &__item__question__btn::after {
+      opacity: 0;
+    }
+    details[open] &__item {
+      grid-template-rows: 1fr;
+    }
+  }
+  // 導入企業
+  &__customer {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background-color: #fff;
+    p {
+      margin-bottom: 30px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      span {
+        font-size: 1.9rem;
+        color: global.$color--green;
+      }
+    }
+    img {
+      width: 70%;
+      max-width: 750px;
+      margin: 0 auto;
+      @include global.sp {
+        width: 80%;
       }
     }
   }

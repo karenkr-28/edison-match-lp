@@ -37,3 +37,12 @@
             <button><a href="<?php echo home_url('/#contact'); ?>">お問い合わせ</a></button>
         </div>
     </header>
+
+    <div class="c-btn__box">
+        <button class="c-btn__fixed c-btn__fixed--green">
+            <a href="<?php echo home_url('/#/'); ?>">無料トライアル</a>
+        </button>
+        <button class="c-btn__fixed c-btn__fixed--blue">
+            <a href="<?php echo home_url('/#/'); ?>">資料ダウンロード</a>
+        </button>
+    </div>

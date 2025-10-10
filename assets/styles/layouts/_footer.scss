@@ -1,4 +1,42 @@
 @use "../global" as global;
 
 .l-footer {
+  background-color: global.$color--gray;
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    @include global.sp {
+      flex-direction: column;
+      padding-top: 50px;
+      padding-bottom: 40px;
+    }
+  }
+  &__info {
+    margin-bottom: 25px;
+    font-weight: bold;
+    img {
+      width: 250px;
+      margin-bottom: 20px;
+    }
+  }
+  &__menu {
+    font-size: 1.4rem;
+    font-weight: bold;
+    list-style: none;
+    li {
+      margin-bottom: 17px;
+    }
+    &__box {
+      display: flex;
+      width: 400px;
+      justify-content: space-around;
+    }
+    &__right li {
+      display: flex;
+      gap: 5px;
+    }
+  }
 }
