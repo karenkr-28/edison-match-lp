@@ -1,17 +1,18 @@
 @use "../global" as global;
-.c-btn {
-  &__box {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    bottom: 10%;
-    right: 10%;
-    margin: 0;
-    z-index: 100;
+.c-btn-primary {
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: global.$color--blue;
+  border-radius: 3px;
+  transition: 0.3s;
+  &:hover {
+    background-color: global.$color--green;
   }
 }
 
-.c-btn__ctr {
+.c-btn-cta {
   position: relative;
   display: flex;
   align-items: center;
@@ -22,16 +23,27 @@
   border-radius: 9999px;
   transition: 0.3s ease-in-out;
   box-shadow: 0px 4px 10px #00000040;
+  &:hover {
+    .c-btn-cta__arrow {
+      transform: translateX(5px);
+    }
+  }
   &__arrow {
     width: 30px;
+    transition: 0.2s ease-in-out;
   }
 
   &--green {
     background-color: global.$color--green;
-    margin-bottom: 10px;
+    &:hover {
+      background-color: darken(global.$color--green, 10%);
+    }
   }
 
   &--blue {
     background-color: global.$color--blue;
+    &:hover {
+      background-color: darken(global.$color--blue, 10%);
+    }
   }
 }

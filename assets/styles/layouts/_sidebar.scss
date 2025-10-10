@@ -1,0 +1,42 @@
+@use "../global" as global;
+
+.l-sidebar {
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+  z-index: 99;
+  &__totop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    margin: 0px 20px 20px auto;
+    border-radius: 100%;
+    background-color: global.$color--blue;
+
+    transition: 0.2s ease-in-out;
+    img {
+      width: 26px;
+    }
+    &:hover {
+      transform: translateY(-2px);
+      background-color: darken(global.$color--blue, 10%);
+    }
+  }
+  &__cta-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .c-btn-cta {
+      justify-content: space-between;
+      width: 180px;
+      padding: 10px 11px 10px 20px;
+      font-size: 1.4rem;
+      &__arrow {
+        width: 26px;
+      }
+    }
+  }
+}
