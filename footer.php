@@ -11,8 +11,8 @@
             <div class="l-footer__menu l-footer__menu__left">
                 <ul>
                     <li><a href="<?php echo home_url('/#/'); ?>">お知らせ</a></li>
-                    <li><a href="<?php echo home_url('/#/'); ?>">お問い合わせ</a></li>
-                    <li><a href="<?php echo home_url('/#/'); ?>">資料ダウンロード</a></li>
+                    <li><a href="<?php echo home_url('/contact/'); ?>">お問い合わせ</a></li>
+                    <li><a href="<?php echo home_url('/contact/'); ?>">資料ダウンロード</a></li>
                 </ul>
             </div>
             <div class="l-footer__menu l-footer__menu__right">
