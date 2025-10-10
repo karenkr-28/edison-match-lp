@@ -17,11 +17,11 @@
             </div>
             <div class="l-footer__menu l-footer__menu__right">
                 <li>
-                    <a href="https://careers.thomas-gr.com/" target="_blank">企業サイト</a>
+                    <a href="https://thomas-gr.com/" target="_blank">企業サイト</a>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/external_link.svg" alt="EDISON MATCH">
                 </li>
                 <li>
-                    <a href="https://thomas-gr.com/" target="_blank">採用情報</a>
+                    <a href="https://careers.thomas-gr.com/" target="_blank">採用情報</a>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/external_link.svg" alt="EDISON MATCH">
                 </li>
                 <li>
