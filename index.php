@@ -414,8 +414,12 @@
                     </div>
                 </div>
             </details>
-
         </div>
+    </section>
+
+    <section class="p-front__customer">
+        <p>業種・業態を問わず<br class="sp"><span>幅広くご導入</span>いただいております</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/case_study.png">
     </section>
 
 

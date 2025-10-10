@@ -597,4 +597,28 @@
       grid-template-rows: 1fr;
     }
   }
+  // 導入企業
+  &__customer {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background-color: #fff;
+    p {
+      margin-bottom: 30px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      span {
+        font-size: 1.9rem;
+        color: global.$color--green;
+      }
+    }
+    img {
+      width: 70%;
+      max-width: 750px;
+      margin: 0 auto;
+      @include global.sp {
+        width: 80%;
+      }
+    }
+  }
 }
