@@ -508,6 +508,9 @@
     &__accordion {
       max-inline-size: 90%;
       margin-bottom: 15px;
+      @include global.sp {
+        max-inline-size: none;
+      }
     }
     &__summary {
       display: flex;
