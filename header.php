@@ -38,6 +38,7 @@
                 お問い合わせ
             </a>
         </div>
+        <span class="l-header__nav__btn--sp"></span>
     </header>
 
     <div class="l-sidebar">

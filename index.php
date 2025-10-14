@@ -5,7 +5,7 @@
     <div class="p-front__bg"></div>
     <div class="p-front__fv" data-theme-uri="<?php echo get_template_directory_uri(); ?>">
         <div class="p-front__fv__content">
-            <p class="p-front__fv__catchcopy">“埋もれた情報”を<br class="sp">“次のアクション”へつなげる、<br>
+            <p class="p-front__fv__catchcopy">“埋もれた情報”を“次のアクション”へつなげる、<br>
                 <span class="p-front__fv__catchcopy--purple">最強</span>のマッチングパートナー
             </p>
             <p class="p-front__fv__logo__text">エジソンマッチ</p>
@@ -19,7 +19,6 @@
                     資料ダウンロード
                     <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg">
                 </a>
-
             </div>
             <div class="p-front__fv__award">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/fv_award_1.png">
@@ -239,7 +238,7 @@
                 <div class="p-front__plan__content__inner">
                     <div class="p-front__plan__card p-front__plan__card--blue">
                         <div class="p-front__plan__card__header">
-                            <h3 class="p-front__plan__card__title">CRM未導入のお客様</h3>
+                            <h3 class="p-front__plan__card__title">CRM導入済みのお客様</h3>
                             <p class="p-front__plan__card__plan">Edison Match ISV版</p>
                             <p class="p-front__plan__card__user">
                                 <span>１ユーザー</span><br>

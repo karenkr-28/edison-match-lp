@@ -3,7 +3,7 @@
         <div class="l-footer__info">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="EDISON MATCH">
             <p>
-                thomas<br>
+                thomas株式会社<br>
                 東京都港区六本木7-21-24 THE MODULE roppongi 2F
             </p>
         </div>

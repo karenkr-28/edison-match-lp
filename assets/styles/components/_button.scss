@@ -10,6 +10,9 @@
   &:hover {
     background-color: global.$color--green;
   }
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
 }
 
 .c-btn-cta {

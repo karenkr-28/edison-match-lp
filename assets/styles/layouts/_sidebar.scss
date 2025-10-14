@@ -4,10 +4,21 @@
   position: fixed;
   bottom: 10%;
   right: 0;
+  padding-right: 3%;
   opacity: 0;
   z-index: 99;
   pointer-events: none;
   transition: 0.3s;
+  @include global.sp {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    opacity: 1;
+  }
   &__totop {
     display: flex;
     justify-content: center;
@@ -18,8 +29,16 @@
     border-radius: 100%;
     background-color: global.$color--blue;
     transition: 0.2s ease-in-out;
+    @include global.sp {
+      width: 33px;
+      height: 33px;
+      margin: 0;
+    }
     img {
       width: 26px;
+      @include global.sp {
+        width: 15px;
+      }
     }
     &:hover {
       transform: translateY(-2px);
