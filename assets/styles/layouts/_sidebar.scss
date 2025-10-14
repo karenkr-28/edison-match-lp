@@ -3,8 +3,7 @@
 .l-sidebar {
   position: fixed;
   bottom: 10%;
-  right: 0;
-  padding-right: 3%;
+  right: 3%;
   opacity: 0;
   z-index: 99;
   pointer-events: none;
@@ -14,9 +13,8 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-end;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 90%;
+    left: 5%;
     opacity: 1;
   }
   &__totop {

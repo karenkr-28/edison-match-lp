@@ -49,7 +49,7 @@
       font-size: 2rem;
       line-height: 3rem;
       @include global.sp {
-        margin-top: 130px;
+        margin-top: 250px;
         font-size: 1.4rem;
       }
       &--purple {
@@ -74,7 +74,7 @@
         font-size: 2rem;
         font-weight: bold;
         @include global.sp {
-          top: 205px;
+          top: 320px;
           left: 5px;
           font-size: 1.5rem;
         }
