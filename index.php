@@ -11,12 +11,11 @@
             <p class="p-front__fv__logo__text">エジソンマッチ</p>
             <img class="p-front__fv__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="EDISON MATCH">
             <div class="p-front__fv__btn">
-                <a class="c-btn-cta c-btn-cta--green" href="<?php echo home_url('/contact/'); ?>">
+                <a class="c-btn-cta c-btn-cta--green" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
                     無料トライアル
                     <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_green.svg">
                 </a>
-
-                <a class="c-btn-cta c-btn-cta--blue" href="<?php echo home_url('/contact'); ?>">
+                <a class="c-btn-cta c-btn-cta--blue" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('資料請求'); ?>">
                     資料ダウンロード
                     <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg">
                 </a>
@@ -134,9 +133,7 @@
                             <span>柔軟なマッチングロジック</span>の<br class="sp">設定が可能
                         </h3>
                         <p class="p-front__features__item__text">
-                            Salesforce上の任意の2オブジェクト間でマッチングが可能。<br>
-                            「人材×案件」「企業×企業」「物件×希望条件」など、業界・業務を問わず利用できます。
-                            GUIベースで設定できるため、現場主導での運用にも最適です。
+                            Salesforce上の任意の2オブジェクト間でマッチングが可能。 「人材×案件」「企業×企業」「物件×希望条件」など、業界・業務を問わず利用できます。 GUIベースで設定できるため、現場主導での運用にも最適です。
                         </p>
                     </div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/feature_point_02.png">
@@ -233,9 +230,9 @@
                             <li>サポートサービス：メールによるテクニカル<br>サポート</li>
                         </ul>
                     </div>
-                    <a href="<?php echo home_url('/contact/'); ?>" class="c-btn-cta c-btn-cta--green">
+                    <a class="c-btn-cta c-btn-cta--green" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
                         見積もりを依頼する
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_green.svg" alt="button" class="c-btn-cta__arrow">
+                        <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_green.svg">
                     </a>
                 </div>
 
@@ -251,7 +248,6 @@
                         </div>
                         <ul class="p-front__plan__content--check">
                             <li>14日間の無料トライアル</li>
-                            <li>初期費用：100,000円(税抜)</li>
                             <li>最低契約期間：１年間</li>
                             <li>最低契約数：５ユーザー</li>
                             <li>ユーザー追加単価：１ユーザー</li>
@@ -259,9 +255,9 @@
                             <li>サポートサービス：メールによるテクニカル<br>サポート</li>
                         </ul>
                     </div>
-                    <a href="<?php echo home_url('/contact/'); ?>" class="c-btn-cta c-btn-cta--blue">
+                    <a class="c-btn-cta c-btn-cta--blue" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
                         見積もりを依頼する
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg" alt="button" class="c-btn-cta__arrow">
+                        <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg">
                     </a>
                 </div>
             </div>
@@ -310,7 +306,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/flow_3.svg">
                     </div>
                     <div class="p-front__flow__step__contents__right">
-                        <h4>お問い合わせ</h4>
+                        <h4>初期設定・導入作業</h4>
                         <p>担当者が伴走し、インストールやマニュアル作成、説明会を実施。</p>
                     </div>
                 </div>

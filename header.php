@@ -34,7 +34,9 @@
                     <li><a href="<?php echo home_url('/#'); ?>">お知らせ</a></li>
                 </ul>
             </div>
-            <a class="c-btn-primary" href="<?php echo home_url('/contact'); ?>">お問い合わせ</a>
+            <a class="c-btn-primary" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
+                お問い合わせ
+            </a>
         </div>
     </header>
 
@@ -44,13 +46,13 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/totop_arrow.svg">
         </button>
         <div class="l-sidebar__cta-wrap">
-            <a href="<?php echo home_url('/contact/'); ?>" class="c-btn-cta c-btn-cta--green">
+            <a class="c-btn-cta c-btn-cta--green" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
                 無料トライアル
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_green.svg" alt="" class="c-btn-cta__arrow">
+                <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_green.svg">
             </a>
-            <a href="<?php echo home_url('/contact/'); ?>" class="c-btn-cta c-btn-cta--blue">
+            <a class="c-btn-cta c-btn-cta--blue" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('資料請求'); ?>">
                 資料ダウンロード
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg" alt="" class="c-btn-cta__arrow">
+                <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg">
             </a>
         </div>
     </div>

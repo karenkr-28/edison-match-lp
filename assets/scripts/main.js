@@ -63,19 +63,29 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// TOTOP
+// TOTOP,sidebar
 const sidebar = document.querySelector(".l-sidebar");
 const pagetop_btn = document.querySelector(".l-sidebar__totop");
+const footer = document.querySelector("footer");
+
 pagetop_btn.addEventListener("click", scroll_top);
 function scroll_top() {
   window.scroll({ top: 0, behavior: "smooth" });
 }
-
 window.addEventListener("scroll", scroll_event);
 function scroll_event() {
   if (window.pageYOffset > 100) {
     sidebar.classList.add("is-visible");
   } else {
     sidebar.classList.remove("is-visible");
+  }
+  const footerRect = footer.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  const overlap = windowHeight - footerRect.top;
+  if (overlap > 0) {
+    sidebar.style.bottom = `${overlap + 20}px`;
+  } else {
+    sidebar.style.bottom = "10%";
   }
 }
