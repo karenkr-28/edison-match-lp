@@ -1,7 +1,6 @@
 @use "../global" as global;
 
 /*========= トップページ(front)用のCSS ===============*/
-
 .p-front {
   &__bg {
     position: fixed;
@@ -29,7 +28,7 @@
       @include global.sp {
         position: inherit;
         right: 10px;
-        width: 110%;
+        width: 100%;
       }
     }
 
@@ -113,8 +112,14 @@
     padding: 100px 0;
     background-color: #fff;
     z-index: 2;
+    @include global.sp {
+      padding: 50px 0;
+    }
     .c-catchcopy {
       margin-bottom: 120px;
+      @include global.sp {
+        margin-bottom: 50px;
+      }
     }
     &__explanation {
       display: flex;
@@ -127,7 +132,7 @@
         max-width: 600px;
         @include global.sp {
           margin: 50px auto 0;
-          width: 80%;
+          width: 90%;
         }
       }
       &-list {
@@ -138,8 +143,14 @@
         list-style: decimal;
         font-size: 2rem;
         font-weight: 600;
+        @include global.sp {
+          font-size: 1.7rem;
+        }
         li::marker {
           font-size: 2.6rem;
+          @include global.sp {
+            font-size: 2rem;
+          }
         }
         span {
           font-weight: bold;
@@ -246,6 +257,9 @@
     .l-inner {
       padding-top: 150px;
       padding-bottom: 110px;
+      @include global.sp {
+        padding-top: 50px;
+      }
     }
     .c-title--icon {
       margin-bottom: 65px;
@@ -262,6 +276,9 @@
         width: 45%;
         max-width: 350px;
         z-index: 1;
+        @include global.sp {
+          width: 90%;
+        }
       }
       &__content {
         width: 50%;
@@ -293,6 +310,9 @@
           content: "※";
           top: -10px;
           font-size: 1.5rem;
+          @include global.sp {
+            top: 30px;
+          }
         }
       }
     }
@@ -302,6 +322,9 @@
     padding-top: 90px;
     padding-bottom: 80px;
     background-color: global.$color--gray;
+    @include global.sp {
+      padding-top: 50px;
+    }
     p {
       margin-bottom: 50px;
     }
@@ -313,6 +336,10 @@
   &__plan {
     padding-top: 100px;
     padding-bottom: 150px;
+    @include global.sp {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
     .c-title--icon {
       color: global.$color--green;
     }
@@ -429,7 +456,10 @@
     padding-top: 125px;
     padding-bottom: 185px;
     background-color: global.$color--gray;
-
+    @include global.sp {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
     &__head {
       margin-top: 70px;
       margin-bottom: 70px;
@@ -448,6 +478,8 @@
         color: global.$color--blue;
         border-color: global.$color--blue;
       }
+      @include global.sp{
+      margin-bottom: 0;}
     }
     &__step {
       &__contents {
@@ -517,6 +549,7 @@
     .c-title--icon {
       color: global.$color--blue;
       margin-bottom: 70px;
+      padding-bottom: 50px;
     }
     &__accordion {
       max-inline-size: 90%;

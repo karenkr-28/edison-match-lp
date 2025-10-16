@@ -42,18 +42,20 @@
     </header>
 
     <div class="l-sidebar">
-        <!-- totpp -->
+        <!-- totop -->
         <button class="l-sidebar__totop">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/totop_arrow.svg">
         </button>
-        <div class="l-sidebar__cta-wrap">
-            <a class="c-btn-cta c-btn-cta--green" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
-                無料トライアル
-                <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_green.svg">
-            </a>
-            <a class="c-btn-cta c-btn-cta--blue" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('資料請求'); ?>">
-                資料ダウンロード
-                <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg">
-            </a>
-        </div>
+        <?php if (!is_page('contact')) : ?>
+            <div class="l-sidebar__cta-wrap">
+                <a class="c-btn-cta c-btn-cta--green" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
+                    無料トライアル
+                    <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_green.svg">
+                </a>
+                <a class="c-btn-cta c-btn-cta--blue" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('資料請求'); ?>">
+                    資料ダウンロード
+                    <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg">
+                </a>
+            </div>
+        <?php endif; ?>
     </div>

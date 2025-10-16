@@ -36,6 +36,8 @@
       font-weight: 500;
       @media screen and (max-width: 1000px) {
         display: none;
+        width: auto;
+        min-width: auto;
       }
     }
   }
