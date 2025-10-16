@@ -38,7 +38,7 @@
                 </div>
             </h2>
             <p class="c-catchcopy">
-                <span class="c-catchcopy__highlight">データを資産として活用</span>することで、<br class="pc">
+                <span class="c-catchcopy__highlight">データを資産として活用</span>することで、<br>
                 <span class="c-catchcopy__highlight">収益向上を実現</span>します。
             </p>
             <div class="p-front__concept__explanation">
@@ -114,7 +114,7 @@
                     <div class="p-front__features__item__content">
                         <div class="p-front__features__item__tag">POINT 01</div>
                         <h3 class="p-front__features__item__title">
-                            <span>「人材マッチング」テンプレート</span>を標準搭載
+                            <span>「人材マッチング」<br class="sp">テンプレート</span>を標準搭載
                         </h3>
                         <p class="p-front__features__item__text">
                             人材業界での活用に最適化された候補者×求人のマッチングセットを標準装備。<br>
@@ -133,7 +133,7 @@
                         </h3>
                         <p class="p-front__features__item__text">
                             Salesforce上の任意の2オブジェクト間でマッチングが可能。 「人材×案件」「企業×企業」「物件×希望条件」など、業界・業務を問わず利用できます。 GUIベースで設定できるため、現場主導での運用にも最適です。
-                        </p>
+                        </p><br class="sp">
                     </div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/feature_point_02.png">
                 </div>
@@ -142,7 +142,7 @@
                     <div class="p-front__features__item__content">
                         <div class="p-front__features__item__tag">POINT 03</div>
                         <h3 class="p-front__features__item__title">
-                            条件・項目を<span>自由にカスタマイズ</span>
+                            条件・項目を<span>自由に<br class="sp">カスタマイズ</span>
                         </h3>
                         <p class="p-front__features__item__text">
                             AND/OR条件・かっこ（括弧）を含む高度な論理検索式にも対応。検索項目や結果の表示内容も、コード不要で簡単に変更可能です。精度の高い絞り込みにより、“今すぐ使えるデータ”に瞬時にアクセスできます。

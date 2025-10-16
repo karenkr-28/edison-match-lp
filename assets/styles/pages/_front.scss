@@ -198,6 +198,9 @@
         border: #7070700f 1px solid;
         border-radius: 50%;
         aspect-ratio: 1/1;
+        @include global.sp {
+          bottom: -39px;
+        }
       }
       &__text {
         max-width: 210px;
@@ -263,6 +266,9 @@
     }
     .c-title--icon {
       margin-bottom: 65px;
+      @include global.sp {
+        margin-bottom: 35px;
+      }
     }
     &__item {
       display: flex;
@@ -349,7 +355,7 @@
       @include global.sp {
         flex-direction: column;
         align-items: center;
-        gap: 50px;
+        gap: 70px;
       }
       &--check {
         li {
@@ -478,8 +484,9 @@
         color: global.$color--blue;
         border-color: global.$color--blue;
       }
-      @include global.sp{
-      margin-bottom: 0;}
+      @include global.sp {
+        margin-bottom: 0;
+      }
     }
     &__step {
       &__contents {

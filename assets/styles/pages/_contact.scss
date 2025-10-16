@@ -82,12 +82,18 @@
       padding: 10px;
       border-radius: 3px;
       background-color: rgba(global.$color--blue, 0.1);
+      @include global.sp {
+        font-size: 1.6rem;
+      }
     }
     input[type="textarea"] {
       height: 360px;
       padding-top: 5px;
       margin-bottom: 80px;
       vertical-align: top;
+      @include global.sp {
+        font-size: 1.6rem;
+      }
     }
     input[type="checkbox"] {
       vertical-align: middle;
