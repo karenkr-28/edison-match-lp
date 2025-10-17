@@ -1,13 +1,25 @@
-// よくあるご質問
-// document
-//   .querySelectorAll(".p-front__faq__item__question")
-//   .forEach((btn) => {
-//     btn.addEventListener("click", function () {
-//       const faqDiv = btn.closest(".p-front__faq__item");
-//       faqDiv.classList.toggle("is-open");
-//     });
-//   });
+// ハンバーガーメニュー
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".l-header__menu-toggle");
+  const headNav = document.querySelector("#js-header__nav");
 
+  hamburger.addEventListener("click", () => {
+    if (hamburger.classList.contains("is-active")) {
+      hamburger.classList.remove("is-active");
+      headNav.classList.remove("is-active");
+    } else {
+      hamburger.classList.add("is-active");
+      headNav.classList.add("is-active");
+    }
+  });
+
+  headNav.addEventListener("click", () => {
+    hamburger.classList.remove("is-active");
+    headNav.classList.remove("is-active");
+  });
+});
+
+// よくあるご質問
 const initializeDetailsAccordion = (details) => {
   const summary = details.querySelector("summary");
   const panel = details.querySelector("summary + *");
@@ -71,3 +83,30 @@ document.addEventListener("DOMContentLoaded", () => {
     initializeDetailsAccordion(accordion);
   });
 });
+
+// TOTOP,sidebar
+const sidebar = document.querySelector(".l-sidebar");
+const pagetop_btn = document.querySelector(".l-sidebar__totop");
+const footer = document.querySelector("footer");
+
+pagetop_btn.addEventListener("click", scroll_top);
+function scroll_top() {
+  window.scroll({ top: 0, behavior: "smooth" });
+}
+window.addEventListener("scroll", scroll_event);
+function scroll_event() {
+  if (window.pageYOffset > 100) {
+    sidebar.classList.add("is-visible");
+  } else {
+    sidebar.classList.remove("is-visible");
+  }
+  const footerRect = footer.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  const overlap = windowHeight - footerRect.top;
+  if (overlap > 0) {
+    sidebar.style.bottom = `${overlap + 20}px`;
+  } else {
+    sidebar.style.bottom = "10%";
+  }
+}
