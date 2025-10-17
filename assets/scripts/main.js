@@ -1,3 +1,24 @@
+// ハンバーガーメニュー
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".l-header__menu__btn");
+  const headNav = document.querySelector("#js-header__nav");
+
+  hamburger.addEventListener("click", () => {
+    if (hamburger.classList.contains("is-active")) {
+      hamburger.classList.remove("is-active");
+      headNav.classList.remove("is-active");
+    } else {
+      hamburger.classList.add("is-active");
+      headNav.classList.add("is-active");
+    }
+  });
+
+  headNav.addEventListener("click", () => {
+    hamburger.classList.remove("is-active");
+    headNav.classList.remove("is-active");
+  });
+});
+
 // よくあるご質問
 const initializeDetailsAccordion = (details) => {
   const summary = details.querySelector("summary");

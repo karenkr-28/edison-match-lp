@@ -23,22 +23,39 @@
             <a class="l-header__logo" href="<?php echo home_url('/'); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="EDISON MATCH">
             </a>
-            <div class="l-header__nav">
-                <ul>
-                    <li><a href="<?php echo home_url('/#concept'); ?>">コンセプト</a></li>
-                    <li><a href="<?php echo home_url('/#features'); ?>">特徴</a></li>
-                    <li><a href="<?php echo home_url('/#'); ?>">実績</a></li>
-                    <li><a href="<?php echo home_url('/#plan'); ?>">プラン</a></li>
-                    <li><a href="<?php echo home_url('/#flow'); ?>">導入の流れ</a></li>
-                    <li><a href="<?php echo home_url('/#faq'); ?>">よくあるご質問</a></li>
-                    <li><a href="<?php echo home_url('/#'); ?>">お知らせ</a></li>
+            <button class="l-header__menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="l-header__nav" id="js-header__nav">
+                <ul class="l-header__nav__list">
+                    <li class="l-header__nav__item"><a href=" <?php echo home_url('/#concept'); ?>">コンセプト</a></li>
+                    <li class="l-header__nav__item"><a href="<?php echo home_url('/#features'); ?>">特徴</a></li>
+                    <li class="l-header__nav__item"><a href="<?php echo home_url('/#'); ?>">実績</a></li>
+                    <li class="l-header__nav__item"><a href="<?php echo home_url('/#plan'); ?>">プラン</a></li>
+                    <li class="l-header__nav__item"><a href="<?php echo home_url('/#flow'); ?>">導入の流れ</a></li>
+                    <li class="l-header__nav__item"><a href="<?php echo home_url('/#faq'); ?>">よくあるご質問</a></li>
+                    <li class="l-header__nav__item"><a href="<?php echo home_url('/#'); ?>">お知らせ</a></li>
                 </ul>
-            </div>
-            <a class="c-btn-primary" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
+                <a class="c-btn-primary l-header__nav__btn__contact" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
+                    お問い合わせ
+                </a>
+                <div class="l-header__nav__btn__cta__box">
+                    <a class="c-btn-cta c-btn-cta--green l-header__nav__btn__cta" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
+                        無料トライアル
+                        <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_green.svg">
+                    </a>
+                    <a class="c-btn-cta c-btn-cta--blue l-header__nav__btn__cta" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('資料請求'); ?>">
+                        資料ダウンロード
+                        <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg">
+                    </a>
+                </div>
+            </nav>
+            <a class="c-btn-primary l-header__contact__btn" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
                 お問い合わせ
             </a>
         </div>
-        <span class="l-header__nav__btn--sp"></span>
     </header>
 
     <div class="l-sidebar">
