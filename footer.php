@@ -1,7 +1,9 @@
 <footer class="l-footer">
     <div class="l-footer__inner">
         <div class="l-footer__info">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="EDISON MATCH">
+            <a href="<?php echo home_url('/'); ?>">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="EDISON MATCH">
+            </a>
             <p>
                 thomas株式会社<br>
                 東京都港区六本木7-21-24 THE MODULE roppongi 2F
