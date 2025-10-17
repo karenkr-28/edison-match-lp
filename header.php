@@ -23,7 +23,7 @@
             <a class="l-header__logo" href="<?php echo home_url('/'); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="EDISON MATCH">
             </a>
-            <button class="l-header__menu__btn">
+            <button class="l-header__menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -38,15 +38,15 @@
                     <li class="l-header__nav__item"><a href="<?php echo home_url('/#faq'); ?>">よくあるご質問</a></li>
                     <li class="l-header__nav__item"><a href="<?php echo home_url('/#'); ?>">お知らせ</a></li>
                 </ul>
-                <a class="c-btn-primary l-header__nav__btn__contact" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
+                <a class="c-btn-primary l-header__nav__contact-btn" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
                     お問い合わせ
                 </a>
-                <div class="l-header__nav__btn__cta__box">
-                    <a class="c-btn-cta c-btn-cta--green l-header__nav__btn__cta" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
+                <div class="l-header__nav__cta-btn__box">
+                    <a class="c-btn-cta c-btn-cta--green l-header__nav__cta-btn" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
                         無料トライアル
                         <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_green.svg">
                     </a>
-                    <a class="c-btn-cta c-btn-cta--blue l-header__nav__btn__cta" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('資料請求'); ?>">
+                    <a class="c-btn-cta c-btn-cta--blue l-header__nav__cta-btn" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('資料請求'); ?>">
                         資料ダウンロード
                         <img class="c-btn-cta__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/btn_arrow_blue.svg">
                     </a>

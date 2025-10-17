@@ -1,6 +1,6 @@
 // ハンバーガーメニュー
 document.addEventListener("DOMContentLoaded", function () {
-  const hamburger = document.querySelector(".l-header__menu__btn");
+  const hamburger = document.querySelector(".l-header__menu-toggle");
   const headNav = document.querySelector("#js-header__nav");
 
   hamburger.addEventListener("click", () => {
