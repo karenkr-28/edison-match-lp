@@ -37,6 +37,10 @@
       display: flex;
       width: 400px;
       justify-content: space-around;
+      @include global.sp {
+        gap: 20px;
+        width: auto;
+      }
     }
     &__right li {
       display: flex;

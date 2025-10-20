@@ -26,9 +26,8 @@
     padding-bottom: 10px;
   }
   &__nav {
-    position: fixed;
     @media screen and (max-width: 1000px) {
-      position: absolute;
+      position: fixed;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -36,14 +35,15 @@
       right: 0;
       width: 100%;
       height: 100vh;
-      font-weight: 700;
+      padding-top: 20px;
+      margin-top: 58px;
       background: #fff;
+      overflow: scroll;
       transition: 0.3s;
       opacity: 0;
       visibility: hidden;
     }
     &.is-active {
-      position: fixed;
       opacity: 1;
       visibility: visible;
     }
