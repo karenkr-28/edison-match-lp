@@ -113,7 +113,7 @@
     background-color: #fff;
     z-index: 2;
     @include global.sp {
-      padding: 50px 0;
+      padding: 100px 0;
     }
     .c-catchcopy {
       margin-bottom: 120px;
@@ -258,11 +258,9 @@
       }
     }
     .l-inner {
-      padding-top: 150px;
+      padding-top: 100px;
       padding-bottom: 110px;
-      @include global.sp {
-        padding-top: 50px;
-      }
+
     }
     .c-title--icon {
       margin-bottom: 65px;
@@ -343,7 +341,7 @@
     padding-top: 100px;
     padding-bottom: 150px;
     @include global.sp {
-      padding-top: 50px;
+      padding-top: 100px;
       padding-bottom: 50px;
     }
     .c-title--icon {
@@ -463,7 +461,7 @@
     padding-bottom: 185px;
     background-color: global.$color--gray;
     @include global.sp {
-      padding-top: 50px;
+      padding-top: 100px;
       padding-bottom: 50px;
     }
     &__head {

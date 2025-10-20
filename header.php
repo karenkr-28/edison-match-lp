@@ -32,11 +32,11 @@
                 <ul class="l-header__nav__list">
                     <li class="l-header__nav__item"><a href=" <?php echo home_url('/#concept'); ?>">コンセプト</a></li>
                     <li class="l-header__nav__item"><a href="<?php echo home_url('/#features'); ?>">特徴</a></li>
-                    <li class="l-header__nav__item"><a href="<?php echo home_url('/#'); ?>">実績</a></li>
+                    <!-- <li class="l-header__nav__item"><a href="<?php echo home_url('/#'); ?>">実績</a></li> -->
                     <li class="l-header__nav__item"><a href="<?php echo home_url('/#plan'); ?>">プラン</a></li>
                     <li class="l-header__nav__item"><a href="<?php echo home_url('/#flow'); ?>">導入の流れ</a></li>
-                    <li class="l-header__nav__item"><a href="<?php echo home_url('/#faq'); ?>">よくあるご質問</a></li>
-                    <li class="l-header__nav__item"><a href="<?php echo home_url('/#'); ?>">お知らせ</a></li>
+                    <!-- <li class="l-header__nav__item"><a href="<?php echo home_url('/#faq'); ?>">よくあるご質問</a></li> -->
+                    <!-- <li class="l-header__nav__item"><a href="<?php echo home_url('/#'); ?>">お知らせ</a></li> -->
                 </ul>
                 <a class="c-btn-primary l-header__nav__contact-btn" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
                     お問い合わせ
@@ -63,7 +63,7 @@
         <button class="l-sidebar__totop">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/totop_arrow.svg">
         </button>
-        <?php if (!is_page('contact')) : ?>
+        <?php if (!is_page(array('contact', 'contact/confirm/', 'contact/thanks/'))) : ?>
             <div class="l-sidebar__cta-wrap">
                 <a class="c-btn-cta c-btn-cta--green" href="<?php echo rtrim(home_url('/contact'), '/'); ?>?item=<?php echo urlencode('無料トライアル'); ?>">
                     無料トライアル
