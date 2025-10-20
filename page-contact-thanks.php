@@ -16,9 +16,7 @@ get_header(); ?>
             受付完了メールが届かない場合はお手数ですが、再度お問い合わせいただくか、弊社までご一報ください。<br>
             お問い合わせ：
         </p>
-        <button class="p-contact__thanks__index-btn">
-            <a href="<?php echo home_url(''); ?>">TOPへ</a>
-        </button>
+        <a class="p-contact__thanks__index-btn" href="<?php echo home_url(''); ?>">TOPへ</a>
     </div>
 </main>
 

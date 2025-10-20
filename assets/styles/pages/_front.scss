@@ -1,7 +1,6 @@
 @use "../global" as global;
 
 /*========= トップページ(front)用のCSS ===============*/
-
 .p-front {
   &__bg {
     position: fixed;
@@ -27,9 +26,9 @@
       width: 50%;
       max-width: 600px;
       @include global.sp {
-        left: 30%;
-        width: auto;
-        height: 80vh;
+        position: inherit;
+        right: 10px;
+        width: 100%;
       }
     }
 
@@ -40,8 +39,8 @@
       margin-left: 5%;
       z-index: 1;
       @include global.sp {
-        position: absolute;
-        width: 80%;
+        margin: 0 auto;
+        width: 85%;
       }
     }
     &__catchcopy {
@@ -49,20 +48,24 @@
       font-size: 2rem;
       line-height: 3rem;
       @include global.sp {
-        font-size: 1.6rem;
+        margin-top: 250px;
+        font-size: 1.4rem;
       }
       &--purple {
         font-size: 2.7rem;
         font-weight: bold;
         color: global.$color--purple;
         @include global.sp {
-          font-size: 2.2rem;
+          font-size: 1.9rem;
         }
       }
     }
     &__logo {
       width: 100%;
       margin-bottom: 25px;
+      @include global.sp {
+        width: 90%;
+      }
       &__text {
         position: absolute;
         top: 80px;
@@ -70,9 +73,9 @@
         font-size: 2rem;
         font-weight: bold;
         @include global.sp {
-          top: 100px;
+          top: 320px;
           left: 5px;
-          font-size: 1.6rem;
+          font-size: 1.5rem;
         }
       }
     }
@@ -84,7 +87,6 @@
         display: none;
       }
     }
-
     &__award {
       display: flex;
       gap: 20px;
@@ -110,8 +112,14 @@
     padding: 100px 0;
     background-color: #fff;
     z-index: 2;
+    @include global.sp {
+      padding: 100px 0;
+    }
     .c-catchcopy {
       margin-bottom: 120px;
+      @include global.sp {
+        margin-bottom: 50px;
+      }
     }
     &__explanation {
       display: flex;
@@ -124,7 +132,7 @@
         max-width: 600px;
         @include global.sp {
           margin: 50px auto 0;
-          width: 80%;
+          width: 90%;
         }
       }
       &-list {
@@ -135,8 +143,14 @@
         list-style: decimal;
         font-size: 2rem;
         font-weight: 600;
+        @include global.sp {
+          font-size: 1.7rem;
+        }
         li::marker {
           font-size: 2.6rem;
+          @include global.sp {
+            font-size: 2rem;
+          }
         }
         span {
           font-weight: bold;
@@ -184,6 +198,9 @@
         border: #7070700f 1px solid;
         border-radius: 50%;
         aspect-ratio: 1/1;
+        @include global.sp {
+          bottom: -39px;
+        }
       }
       &__text {
         max-width: 210px;
@@ -241,11 +258,15 @@
       }
     }
     .l-inner {
-      padding-top: 150px;
+      padding-top: 100px;
       padding-bottom: 110px;
+
     }
     .c-title--icon {
       margin-bottom: 65px;
+      @include global.sp {
+        margin-bottom: 35px;
+      }
     }
     &__item {
       display: flex;
@@ -259,9 +280,15 @@
         width: 45%;
         max-width: 350px;
         z-index: 1;
+        @include global.sp {
+          width: 90%;
+        }
       }
       &__content {
         width: 50%;
+        @include global.sp {
+          width: 90%;
+        }
       }
       &__tag {
         width: fit-content;
@@ -273,11 +300,23 @@
         border-radius: 20px;
       }
       &__title {
+        position: relative;
         margin-bottom: 20px;
         font-size: 2.2rem;
         span {
           font-weight: 800;
           color: global.$color--purple;
+        }
+      }
+      &:nth-of-type(1) {
+        .p-front__features__item__title::after {
+          position: absolute;
+          content: "※";
+          top: -10px;
+          font-size: 1.5rem;
+          @include global.sp {
+            top: 30px;
+          }
         }
       }
     }
@@ -287,6 +326,9 @@
     padding-top: 90px;
     padding-bottom: 80px;
     background-color: global.$color--gray;
+    @include global.sp {
+      padding-top: 50px;
+    }
     p {
       margin-bottom: 50px;
     }
@@ -296,8 +338,12 @@
   }
   // プラン
   &__plan {
-    padding-top: 30px;
+    padding-top: 100px;
     padding-bottom: 150px;
+    @include global.sp {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
     .c-title--icon {
       color: global.$color--green;
     }
@@ -307,7 +353,7 @@
       @include global.sp {
         flex-direction: column;
         align-items: center;
-        gap: 50px;
+        gap: 70px;
       }
       &--check {
         li {
@@ -345,6 +391,7 @@
       }
       &--blue {
         border-top: 15px solid global.$color--blue;
+        padding-bottom: 50px;
         .p-front__plan__card__plan {
           color: global.$color--blue;
         }
@@ -385,13 +432,25 @@
         }
       }
     }
-    .c-btn__fixed {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      margin-top: 90px;
-      width: 230px;
+    .c-btn-cta {
+      margin: 90px auto 0;
+      width: fit-content;
       @include global.sp {
-        margin-top: 30px;
+        margin: 30px auto 0;
+      }
+      &--green {
+        margin-right: 0;
+        margin-left: auto;
+        @include global.sp {
+          margin: 30px auto 0;
+        }
+      }
+      &--blue {
+        margin-right: auto;
+        margin-left: 0;
+        @include global.sp {
+          margin: 30px auto 0;
+        }
       }
     }
   }
@@ -401,7 +460,10 @@
     padding-top: 125px;
     padding-bottom: 185px;
     background-color: global.$color--gray;
-
+    @include global.sp {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
     &__head {
       margin-top: 70px;
       margin-bottom: 70px;
@@ -419,6 +481,9 @@
         margin-top: 100px;
         color: global.$color--blue;
         border-color: global.$color--blue;
+      }
+      @include global.sp {
+        margin-bottom: 0;
       }
     }
     &__step {
@@ -489,10 +554,14 @@
     .c-title--icon {
       color: global.$color--blue;
       margin-bottom: 70px;
+      padding-bottom: 50px;
     }
     &__accordion {
       max-inline-size: 90%;
       margin-bottom: 15px;
+      @include global.sp {
+        max-inline-size: none;
+      }
     }
     &__summary {
       display: flex;

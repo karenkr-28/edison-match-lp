@@ -4,6 +4,10 @@
   font-weight: 500;
   .l-inner {
     margin-top: 130px;
+    margin-bottom: 130px;
+    @include global.sp {
+      margin-top: 100px;
+    }
   }
   h1 {
     text-align: center;
@@ -12,6 +16,7 @@
   }
   p {
     margin-bottom: 30px;
+    padding: 20px;
   }
   &__radio-btn {
     display: flex;
@@ -20,6 +25,10 @@
     margin-top: 130px;
     margin-bottom: 80px;
     accent-color: global.$color--blue;
+    @include global.sp {
+      margin: 30px 0 0 0;
+    }
+
     input {
       vertical-align: middle;
       width: 20px;
@@ -31,6 +40,9 @@
       justify-content: center;
       width: 100%;
       gap: 50px;
+      @include global.sp {
+        display: block;
+      }
     }
   }
   &__form {
@@ -38,6 +50,14 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 25px;
+      @include global.sp {
+        display: block;
+      }
+      label {
+        @include global.sp {
+          margin-bottom: 10px;
+        }
+      }
       &--confirm {
         &:nth-of-type(1) {
           margin-top: 170px;
@@ -45,6 +65,9 @@
         p {
           width: 65%;
           margin-bottom: 0;
+          @include global.sp {
+            width: 100%;
+          }
         }
       }
     }
@@ -64,12 +87,18 @@
       padding: 10px;
       border-radius: 3px;
       background-color: rgba(global.$color--blue, 0.1);
+      @include global.sp {
+        font-size: 1.6rem;
+      }
     }
     input[type="textarea"] {
       height: 360px;
       padding-top: 5px;
       margin-bottom: 80px;
       vertical-align: top;
+      @include global.sp {
+        font-size: 1.6rem;
+      }
     }
     input[type="checkbox"] {
       vertical-align: middle;
@@ -123,12 +152,24 @@
     }
     .wpcf7-form-control-wrap {
       width: 60%;
+      @include global.sp {
+        width: 90%;
+        max-width: 60%;
+      }
+    }
+    .wpcf7-list-item {
+      @include global.sp {
+        margin-bottom: 20px;
+      }
     }
   }
 
   &__thanks {
     h1 {
       margin-bottom: 110px;
+      @include global.sp {
+        margin-bottom: 30px;
+      }
     }
     p {
       max-width: 600px;
@@ -139,6 +180,7 @@
       padding: 10px 60px;
       margin: 0 auto;
       width: 200px;
+      text-align: center;
       font-size: 1.6rem;
       font-weight: 600;
       background-color: global.$color--blue;

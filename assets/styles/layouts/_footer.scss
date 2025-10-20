@@ -28,15 +28,22 @@
     list-style: none;
     li {
       margin-bottom: 17px;
+      a {
+        display: flex;
+        gap: 7px;
+      }
     }
     &__box {
       display: flex;
       width: 400px;
       justify-content: space-around;
+      @include global.sp {
+        gap: 30px;
+        width: auto;
+      }
     }
     &__right li {
       display: flex;
-      gap: 5px;
     }
   }
 }
